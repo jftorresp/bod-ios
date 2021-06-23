@@ -1,0 +1,33 @@
+
+/* Class = "UIButton"; normalTitle = "Create Account"; ObjectID = "2Nx-eM-7lX"; */
+"2Nx-eM-7lX.normalTitle" = "Crear Registro";
+
+/* Class = "UITextField"; placeholder = "Contrasena"; ObjectID = "9bZ-nz-vGL"; */
+"9bZ-nz-vGL.placeholder" = "Contraseña";
+
+/* Class = "UITextField"; placeholder = "Apellido"; ObjectID = "A6R-k6-sUP"; */
+"A6R-k6-sUP.placeholder" = "Apellido";
+
+/* Class = "UITextField"; placeholder = "Nombre "; ObjectID = "IVB-KL-UC5"; */
+"IVB-KL-UC5.placeholder" = "Nombre";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Tlr-rI-IAb"; */
+"Tlr-rI-IAb.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Cedula"; ObjectID = "bri-iV-n9S"; */
+"bri-iV-n9S.placeholder" = "Número de identificación";
+
+/* Class = "UITextField"; placeholder = "Correo electronico"; ObjectID = "nXG-GR-RrV"; */
+"nXG-GR-RrV.placeholder" = "Correo electrónico";
+
+/* Class = "UITextField"; placeholder = "Confirmar Contrasena"; ObjectID = "oxu-X5-Cnl"; */
+"oxu-X5-Cnl.placeholder" = "Confirmar Contraseña";
+
+/* Class = "UILabel"; text = "Registrarse"; ObjectID = "rma-Ia-Jm8"; */
+"rma-Ia-Jm8.text" = "Registrarse";
+
+/* Class = "UITextField"; placeholder = "Telefono"; ObjectID = "suf-iE-rp5"; */
+"suf-iE-rp5.placeholder" = "Teléfono";
+
+
+

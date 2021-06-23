@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XCr-mp-Jm2">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="cKZ-A6-x8o">
+            <objects>
+                <viewController storyboardIdentifier="Register" id="XCr-mp-Jm2" customClass="RegisterViewController" customModule="Pago_Express_BOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H4f-9b-Iqd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yrl-MI-i6O"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v6W-cb-0hA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WhJ-ae-BKU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3vq-fW-Glf">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzO-9P-2oW">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telefono" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="suf-iE-rp5" userLabel="telefonoTextField" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                                        <rect key="frame" x="25" y="20" width="270" height="36"/>
+                                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="36" id="3q5-YV-t7o"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre " textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IVB-KL-UC5" userLabel="NombreApellidoTextField" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                                        <rect key="frame" x="25" y="81" width="270" height="36"/>
+                                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="36" id="FDX-hk-Qdr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cedula" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bri-iV-n9S" userLabel="DocumentoIdentidadTextField" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                                        <rect key="frame" x="90" y="203" width="205" height="36"/>
+                                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="36" id="EOp-MV-5ID"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Correo electronico" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nXG-GR-RrV" userLabel="CorreoElectronicoTextField" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                                        <rect key="frame" x="25" y="264" width="270" height="36"/>
+                                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="36" id="ryc-KO-9Jf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contrasena" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9bZ-nz-vGL" userLabel="ContrasenaTextField" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                                        <rect key="frame" x="25" y="325" width="270" height="36"/>
+                                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="36" id="o1F-gu-URB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Apellido" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="A6R-k6-sUP" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                                        <rect key="frame" x="25" y="142" width="270" height="36"/>
+                                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="36" id="k9q-J0-g2R"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Vuj-yO-njs" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                                        <rect key="frame" x="25" y="203" width="34" height="36"/>
+                                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="36" id="eHI-GI-Jv9"/>
+                                                            <constraint firstAttribute="width" constant="34" id="mOY-FM-LRa"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlr-rI-IAb">
+                                                        <rect key="frame" x="61" y="209" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" id="9ax-3z-53Y"/>
+                                                            <constraint firstAttribute="width" constant="24" id="C21-5C-41h"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button" image="icDropdownCyan"/>
+                                                        <connections>
+                                                            <action selector="pickerButton:" destination="XCr-mp-Jm2" eventType="touchUpInside" id="mMr-K9-qJX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-eM-7lX" userLabel="ButtonCrearCuenta">
+                                                        <rect key="frame" x="160" y="446" width="135" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="pzw-Hq-BLC"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                        <inset key="contentEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Create Account">
+                                                            <color key="titleColor" red="0.40000000000000002" green="0.71372549019999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="createAccount:" destination="XCr-mp-Jm2" eventType="touchUpInside" id="ZdJ-Sl-X0i"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnLogin" translatesAutoresizingMaskIntoConstraints="NO" id="d0h-nB-zai">
+                                                        <rect key="frame" x="151" y="449" width="24" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="1CK-Hu-SIL"/>
+                                                            <constraint firstAttribute="height" constant="24" id="8Ta-Wh-adb"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <textField opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirmar Contrasena" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oxu-X5-Cnl" userLabel="ConfirmarContrasenaTextField" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                                        <rect key="frame" x="25" y="386" width="270" height="36"/>
+                                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="36" id="1QI-bf-YqB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbj-8t-MJ1">
+                                                        <rect key="frame" x="25" y="486" width="270" height="264"/>
+                                                        <string key="text">La contraseña debe cumplir las siguientes condiciones:\n 1. Longitud minima 8 caracteres, máxima 10 caracteres. \n 2.Debe tener al menos: un caracter especial, una letra en mayuscula, una letra en minuscula, un caracter numerico. \n 3. Lo caracteres especiales permitidos son los siguientes:  ! @ # $ % &amp; * ( ) _ - + = { } [ ] \ | : ; ' &lt; &gt; , . ? / \" \" \n 4. No puede contener espacios en blanco. \n 5. No puede contener caracteres iguales consecutivos. \n 6. No puede contener su cédula de identidad. \n 7. No puede contener su fecha de nacimiento. \n 8. No puede contener alguno de sus nombres o apellidos. \n 9. No puede contener la palabra Banco. \n 10. No puede contener la palabra BOD.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="pbj-8t-MJ1" firstAttribute="trailing" secondItem="2Nx-eM-7lX" secondAttribute="trailing" id="228-X0-rgq"/>
+                                                    <constraint firstItem="9bZ-nz-vGL" firstAttribute="trailing" secondItem="suf-iE-rp5" secondAttribute="trailing" id="3Jh-ks-Nfc"/>
+                                                    <constraint firstAttribute="trailing" secondItem="suf-iE-rp5" secondAttribute="trailing" constant="25" id="3eB-M3-aTI"/>
+                                                    <constraint firstItem="oxu-X5-Cnl" firstAttribute="trailing" secondItem="suf-iE-rp5" secondAttribute="trailing" id="51r-dQ-WBt"/>
+                                                    <constraint firstItem="Vuj-yO-njs" firstAttribute="leading" secondItem="A6R-k6-sUP" secondAttribute="leading" id="5aA-q1-qzt"/>
+                                                    <constraint firstItem="oxu-X5-Cnl" firstAttribute="top" secondItem="9bZ-nz-vGL" secondAttribute="bottom" constant="25" id="66Y-pR-3xx"/>
+                                                    <constraint firstItem="A6R-k6-sUP" firstAttribute="leading" secondItem="suf-iE-rp5" secondAttribute="leading" id="6t9-tl-4OL"/>
+                                                    <constraint firstItem="A6R-k6-sUP" firstAttribute="top" secondItem="IVB-KL-UC5" secondAttribute="bottom" constant="25" id="98J-gk-4aM"/>
+                                                    <constraint firstItem="IVB-KL-UC5" firstAttribute="top" secondItem="suf-iE-rp5" secondAttribute="bottom" constant="25" id="Fv8-Xl-rtt"/>
+                                                    <constraint firstItem="bri-iV-n9S" firstAttribute="centerY" secondItem="Tlr-rI-IAb" secondAttribute="centerY" id="H7I-Uj-Tv1"/>
+                                                    <constraint firstItem="nXG-GR-RrV" firstAttribute="trailing" secondItem="suf-iE-rp5" secondAttribute="trailing" id="HZe-Iv-A20"/>
+                                                    <constraint firstItem="9bZ-nz-vGL" firstAttribute="leading" secondItem="suf-iE-rp5" secondAttribute="leading" id="K3C-4h-9pG"/>
+                                                    <constraint firstItem="suf-iE-rp5" firstAttribute="top" secondItem="yzO-9P-2oW" secondAttribute="top" constant="20" id="LkR-b2-PEe"/>
+                                                    <constraint firstItem="oxu-X5-Cnl" firstAttribute="leading" secondItem="suf-iE-rp5" secondAttribute="leading" id="Ny3-Z6-HBH"/>
+                                                    <constraint firstItem="bri-iV-n9S" firstAttribute="trailing" secondItem="A6R-k6-sUP" secondAttribute="trailing" id="QTk-xw-VBT"/>
+                                                    <constraint firstItem="suf-iE-rp5" firstAttribute="leading" secondItem="yzO-9P-2oW" secondAttribute="leading" constant="25" id="Rrl-7c-7SW"/>
+                                                    <constraint firstItem="2Nx-eM-7lX" firstAttribute="leading" secondItem="d0h-nB-zai" secondAttribute="trailing" constant="-15" id="TaD-ac-F1O"/>
+                                                    <constraint firstItem="nXG-GR-RrV" firstAttribute="top" secondItem="bri-iV-n9S" secondAttribute="bottom" constant="25" id="Vc8-ML-zbM"/>
+                                                    <constraint firstItem="Tlr-rI-IAb" firstAttribute="leading" secondItem="Vuj-yO-njs" secondAttribute="trailing" constant="2" id="XRv-Cg-tnI"/>
+                                                    <constraint firstItem="pbj-8t-MJ1" firstAttribute="leading" secondItem="oxu-X5-Cnl" secondAttribute="leading" id="Y4m-ye-v5v"/>
+                                                    <constraint firstItem="nXG-GR-RrV" firstAttribute="leading" secondItem="suf-iE-rp5" secondAttribute="leading" id="Zmw-Sp-9Jg"/>
+                                                    <constraint firstItem="d0h-nB-zai" firstAttribute="centerY" secondItem="2Nx-eM-7lX" secondAttribute="centerY" id="as7-CX-sQc"/>
+                                                    <constraint firstItem="IVB-KL-UC5" firstAttribute="trailing" secondItem="suf-iE-rp5" secondAttribute="trailing" id="dEZ-x1-gTc"/>
+                                                    <constraint firstItem="Vuj-yO-njs" firstAttribute="top" secondItem="A6R-k6-sUP" secondAttribute="bottom" constant="25" id="dKA-3u-H5x"/>
+                                                    <constraint firstItem="IVB-KL-UC5" firstAttribute="leading" secondItem="suf-iE-rp5" secondAttribute="leading" id="iwr-hO-ZCT"/>
+                                                    <constraint firstItem="9bZ-nz-vGL" firstAttribute="top" secondItem="nXG-GR-RrV" secondAttribute="bottom" constant="25" id="l4h-pT-SSI"/>
+                                                    <constraint firstItem="2Nx-eM-7lX" firstAttribute="top" secondItem="oxu-X5-Cnl" secondAttribute="bottom" constant="24" id="m9F-Th-oRI"/>
+                                                    <constraint firstItem="Tlr-rI-IAb" firstAttribute="centerY" secondItem="Vuj-yO-njs" secondAttribute="centerY" id="pdY-xI-09a"/>
+                                                    <constraint firstItem="A6R-k6-sUP" firstAttribute="trailing" secondItem="suf-iE-rp5" secondAttribute="trailing" id="pvU-kf-d9J"/>
+                                                    <constraint firstItem="bri-iV-n9S" firstAttribute="leading" secondItem="Tlr-rI-IAb" secondAttribute="trailing" constant="5" id="rui-lO-U4k"/>
+                                                    <constraint firstItem="2Nx-eM-7lX" firstAttribute="trailing" secondItem="oxu-X5-Cnl" secondAttribute="trailing" id="uDl-9w-gOO"/>
+                                                    <constraint firstItem="pbj-8t-MJ1" firstAttribute="top" secondItem="2Nx-eM-7lX" secondAttribute="bottom" constant="10" id="zKt-Wp-yO1"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="800" id="udp-v7-6be"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3vq-fW-Glf" secondAttribute="bottom" id="AVO-JS-Jr3"/>
+                                    <constraint firstAttribute="trailing" secondItem="3vq-fW-Glf" secondAttribute="trailing" id="K8w-Bb-t1p"/>
+                                    <constraint firstItem="3vq-fW-Glf" firstAttribute="width" secondItem="WhJ-ae-BKU" secondAttribute="width" id="caR-3a-5Y0"/>
+                                    <constraint firstItem="3vq-fW-Glf" firstAttribute="top" secondItem="WhJ-ae-BKU" secondAttribute="top" id="frZ-3y-A8X"/>
+                                    <constraint firstItem="3vq-fW-Glf" firstAttribute="leading" secondItem="WhJ-ae-BKU" secondAttribute="leading" id="gD5-KQ-ytp"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WhJ-ae-BKU" firstAttribute="top" secondItem="H4f-9b-Iqd" secondAttribute="bottom" id="ELD-Oh-WpU"/>
+                            <constraint firstItem="WhJ-ae-BKU" firstAttribute="leading" secondItem="v6W-cb-0hA" secondAttribute="leading" id="PaA-tv-Xvg"/>
+                            <constraint firstItem="Yrl-MI-i6O" firstAttribute="top" secondItem="WhJ-ae-BKU" secondAttribute="bottom" id="XWb-6A-HDK"/>
+                            <constraint firstAttribute="trailing" secondItem="WhJ-ae-BKU" secondAttribute="trailing" id="sbc-a7-5UO"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="800"/>
+                    <connections>
+                        <outlet property="confirmPassword" destination="oxu-X5-Cnl" id="lb1-Vo-qJ1"/>
+                        <outlet property="docType" destination="Vuj-yO-njs" id="Ay4-Gw-haN"/>
+                        <outlet property="documentId" destination="bri-iV-n9S" id="tdj-RB-08R"/>
+                        <outlet property="email" destination="nXG-GR-RrV" id="d32-h3-fs2"/>
+                        <outlet property="firstName" destination="IVB-KL-UC5" id="yav-oG-458"/>
+                        <outlet property="lastName" destination="A6R-k6-sUP" id="ZLy-vP-ypW"/>
+                        <outlet property="password" destination="9bZ-nz-vGL" id="dby-h4-V8b"/>
+                        <outlet property="phone" destination="suf-iE-rp5" id="FHH-Xp-ta3"/>
+                        <outlet property="scrollView" destination="WhJ-ae-BKU" id="VMR-vU-2nI"/>
+                        <outlet property="textFieldPicker" destination="Vuj-yO-njs" id="lNS-e6-bib"/>
+                        <outlet property="validationLabel" destination="pbj-8t-MJ1" id="QAc-bv-aEq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnf-QA-pGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-994" y="-1019"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btnLogin" width="24" height="24"/>
+        <image name="icDropdownCyan" width="24" height="24"/>
+    </resources>
+</document>

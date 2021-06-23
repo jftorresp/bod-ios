@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Directorio"; ObjectID = "3Go-m9-Ccq"; */
+"3Go-m9-Ccq.text" = "Directorio";
+
+/* Class = "UIButton"; normalTitle = "  Guardar"; ObjectID = "pZN-ud-fls"; */
+"pZN-ud-fls.normalTitle" = "  Guardar";
+
+/* Class = "UIButton"; normalTitle = "  Cancelar"; ObjectID = "qKy-q3-Z7x"; */
+"qKy-q3-Z7x.normalTitle" = "  Cancelar";
+
+/* Class = "UITextField"; placeholder = "Teléfono"; ObjectID = "qqU-ay-x58"; */
+"qqU-ay-x58.placeholder" = "Teléfono";

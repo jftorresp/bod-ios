@@ -1,0 +1,24 @@
+
+/* Class = "UITextField"; placeholder = "04120000024"; ObjectID = "98Z-jY-DEJ"; */
+"98Z-jY-DEJ.placeholder" = "";
+
+/* Class = "UIButton"; normalTitle = "Cancelar"; ObjectID = "9Fw-uI-3t9"; */
+"9Fw-uI-3t9.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Resumen de Pago"; ObjectID = "QGG-vX-CpB"; */
+"QGG-vX-CpB.text" = "Payment ";
+
+/* Class = "UITextField"; placeholder = "Description"; ObjectID = "gkW-7S-oJ7"; */
+"gkW-7S-oJ7.placeholder" = "";
+
+/* Class = "UITextField"; placeholder = "Bs. "; ObjectID = "jqd-X0-F9C"; */
+"jqd-X0-F9C.placeholder" = " ";
+
+/* Class = "UIButton"; normalTitle = "Confirmar pago"; ObjectID = "mLu-cd-7gN"; */
+"mLu-cd-7gN.normalTitle" = "Confirm Payment";
+
+/* Class = "UITextField"; placeholder = "Juan Vasquez"; ObjectID = "mTB-gl-52r"; */
+"mTB-gl-52r.placeholder" = "";
+
+/* Class = "UITextField"; placeholder = "Banesco"; ObjectID = "wWV-SD-iOF"; */
+"wWV-SD-iOF.placeholder" = "";

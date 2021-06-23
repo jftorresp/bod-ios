@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nGJ-zR-q4P">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Directory View Controller-->
+        <scene sceneID="MTk-Fm-9yZ">
+            <objects>
+                <viewController storyboardIdentifier="Directory" id="nGJ-zR-q4P" customClass="DirectoryViewController" customModule="Pago_Express_BOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ies-2C-Cfg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIk-qV-11i" userLabel="SearchView">
+                                <rect key="frame" x="0.0" y="134" width="414" height="76"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YA3-CL-2dq">
+                                        <rect key="frame" x="15" y="12.5" width="384" height="51"/>
+                                        <subviews>
+                                            <searchBar contentMode="scaleToFill" restorationIdentifier="searchField" searchBarStyle="minimal" placeholder="Buscar contacto" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjx-Pa-AuO">
+                                                <rect key="frame" x="0.0" y="0.0" width="313" height="51"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <scopeButtonTitles>
+                                                    <string>Title</string>
+                                                    <string>Title</string>
+                                                </scopeButtonTitles>
+                                            </searchBar>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VK0-wG-d5P">
+                                                <rect key="frame" x="313" y="0.0" width="71" height="51"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                                                <color key="tintColor" name="PrimaryColor"/>
+                                                <state key="normal" title="Agregar" image="plus" catalog="system">
+                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addContactPressed:" destination="nGJ-zR-q4P" eventType="touchUpInside" id="NSr-jF-G8D"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="YA3-CL-2dq" secondAttribute="trailing" constant="15" id="03J-6h-9iN"/>
+                                    <constraint firstItem="YA3-CL-2dq" firstAttribute="centerY" secondItem="CIk-qV-11i" secondAttribute="centerY" id="3t9-qT-iiu"/>
+                                    <constraint firstItem="YA3-CL-2dq" firstAttribute="leading" secondItem="CIk-qV-11i" secondAttribute="leading" constant="15" id="T9T-2S-BSO"/>
+                                    <constraint firstAttribute="height" constant="76" id="YMl-tu-L5c"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" restorationIdentifier="Directory" translatesAutoresizingMaskIntoConstraints="NO" id="9YR-GP-eb2" userLabel="BannerView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directorio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQt-uc-bUZ" customClass="CustomLabel" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="170" y="61" width="74.5" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="e4x-23-ujU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Io3-9l-Osm" userLabel="ButtonRealizarPago">
+                                        <rect key="frame" x="177" y="8" width="60" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="FNh-Cx-YdS"/>
+                                            <constraint firstAttribute="height" constant="41" id="zwM-o1-foZ"/>
+                                        </constraints>
+                                        <state key="normal" image="imgDirectory"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="PrimaryColor"/>
+                                <constraints>
+                                    <constraint firstItem="KQt-uc-bUZ" firstAttribute="centerX" secondItem="9YR-GP-eb2" secondAttribute="centerX" id="2DZ-Nu-eaL"/>
+                                    <constraint firstAttribute="height" constant="90" id="TGG-Fk-MGZ"/>
+                                    <constraint firstItem="Io3-9l-Osm" firstAttribute="centerX" secondItem="9YR-GP-eb2" secondAttribute="centerX" id="VyY-bR-Oqe"/>
+                                    <constraint firstItem="Io3-9l-Osm" firstAttribute="top" secondItem="9YR-GP-eb2" secondAttribute="top" constant="8" id="lPF-yD-MYY"/>
+                                    <constraint firstItem="KQt-uc-bUZ" firstAttribute="top" secondItem="Io3-9l-Osm" secondAttribute="bottom" constant="12" id="noQ-Gz-Ios"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="652" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xGy-HR-hN6" customClass="SelfSizedTableView" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="210" width="414" height="652"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="contactCell" textLabel="dEc-jm-JdN" rowHeight="50" style="IBUITableViewCellStyleDefault" id="dDx-AK-wu4" customClass="contactTableViewCell" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dDx-AK-wu4" id="zIo-c0-3Ec">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Nombre de contacto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dEc-jm-JdN">
+                                                    <rect key="frame" x="20" y="0.0" width="356.5" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nombreContactoLabel" destination="dEc-jm-JdN" id="TyL-bO-4Ai"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zVd-Kc-CAk" userLabel="Line">
+                                <rect key="frame" x="0.0" y="211" width="414" height="0.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="fP9-ZB-5RD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NlR-sX-htO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CIk-qV-11i" firstAttribute="leading" secondItem="NlR-sX-htO" secondAttribute="leading" id="0eC-xN-EGA"/>
+                            <constraint firstItem="xGy-HR-hN6" firstAttribute="leading" secondItem="NlR-sX-htO" secondAttribute="leading" id="3mi-fj-QMB"/>
+                            <constraint firstItem="xGy-HR-hN6" firstAttribute="trailing" secondItem="NlR-sX-htO" secondAttribute="trailing" id="5f0-U3-FTM"/>
+                            <constraint firstItem="CIk-qV-11i" firstAttribute="top" secondItem="9YR-GP-eb2" secondAttribute="bottom" id="921-vk-hgD"/>
+                            <constraint firstItem="9YR-GP-eb2" firstAttribute="trailing" secondItem="NlR-sX-htO" secondAttribute="trailing" id="9XR-zj-ePe"/>
+                            <constraint firstItem="9YR-GP-eb2" firstAttribute="leading" secondItem="NlR-sX-htO" secondAttribute="leading" id="CUr-vO-Xh9"/>
+                            <constraint firstItem="zVd-Kc-CAk" firstAttribute="centerX" secondItem="Ies-2C-Cfg" secondAttribute="centerX" id="GS3-MB-MxR"/>
+                            <constraint firstItem="zVd-Kc-CAk" firstAttribute="top" secondItem="CIk-qV-11i" secondAttribute="bottom" constant="1" id="KWI-fA-1kH"/>
+                            <constraint firstItem="xGy-HR-hN6" firstAttribute="top" secondItem="CIk-qV-11i" secondAttribute="bottom" id="Kfp-5g-iMt"/>
+                            <constraint firstItem="xGy-HR-hN6" firstAttribute="trailing" secondItem="NlR-sX-htO" secondAttribute="trailing" id="PDg-Dj-30Q"/>
+                            <constraint firstItem="CIk-qV-11i" firstAttribute="trailing" secondItem="NlR-sX-htO" secondAttribute="trailing" id="PbT-QX-9aW"/>
+                            <constraint firstAttribute="trailing" secondItem="zVd-Kc-CAk" secondAttribute="trailing" id="ZSn-Sr-x8i"/>
+                            <constraint firstItem="zVd-Kc-CAk" firstAttribute="leading" secondItem="Ies-2C-Cfg" secondAttribute="leading" id="fjo-rw-YIo"/>
+                            <constraint firstItem="xGy-HR-hN6" firstAttribute="leading" secondItem="NlR-sX-htO" secondAttribute="leading" id="lfz-Sn-k5X"/>
+                            <constraint firstItem="9YR-GP-eb2" firstAttribute="top" secondItem="NlR-sX-htO" secondAttribute="top" id="skZ-6r-CvI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addContactBtn" destination="VK0-wG-d5P" id="A0H-4T-2OT"/>
+                        <outlet property="contactTableView" destination="xGy-HR-hN6" id="Cvz-Az-pdM"/>
+                        <outlet property="searchBar" destination="fjx-Pa-AuO" id="4u2-4i-cov"/>
+                        <outlet property="viewHeader" destination="9YR-GP-eb2" id="cs2-yN-Ro8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xgN-82-P0K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-855.07246376811599" y="-20.089285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgDirectory" width="61" height="42.5"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.40000000596046448" green="0.70999997854232788" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wo5-d0-6X8">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Codigo Pago View Controller-->
+        <scene sceneID="jge-jh-tTf">
+            <objects>
+                <viewController storyboardIdentifier="CodigoPago" id="wo5-d0-6X8" customClass="CodigoPagoViewController" customModule="Pago_Express_BOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2MU-wF-bBl"/>
+                        <viewControllerLayoutGuide type="bottom" id="jUH-Q8-dWl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IWa-5F-rsY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pBD-TZ-Ehd" userLabel="QR">
+                                <rect key="frame" x="87.5" y="54" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="62k-A9-eLb"/>
+                                    <constraint firstAttribute="width" constant="200" id="stL-3P-b48"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefono" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPj-AZ-Wqi" userLabel="TelefonoTitle">
+                                <rect key="frame" x="25" y="279" width="306" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="2cH-OE-RlY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04122276107" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXU-IR-D0j" userLabel="Telefono">
+                                <rect key="frame" x="25" y="310" width="305" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="C5H-yJ-ql3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m8j-vf-tz1" userLabel="Line1">
+                                <rect key="frame" x="25" y="330" width="325" height="1"/>
+                                <color key="backgroundColor" red="0.67843137254901964" green="0.67843137254901964" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qEm-pX-kIs"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escanea el codigo con tu telefono para almacenar de foma automatica los datos del beneficiario del pago " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="200" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zML-7t-vSH" userLabel="Escanea el codigo con tu telefono para almacenar de foma automatica los datos del beneficiario del pago">
+                                <rect key="frame" x="44.5" y="346" width="286" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5Ca-z8-m9m"/>
+                                    <constraint firstAttribute="width" constant="286" id="fru-IY-DkL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zML-7t-vSH" firstAttribute="centerX" secondItem="IWa-5F-rsY" secondAttribute="centerX" id="0UI-jt-ycQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m8j-vf-tz1" secondAttribute="trailing" constant="9" id="1TH-A6-PQJ"/>
+                            <constraint firstItem="gPj-AZ-Wqi" firstAttribute="leading" secondItem="IWa-5F-rsY" secondAttribute="leadingMargin" constant="9" id="AeZ-iA-OlR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xXU-IR-D0j" secondAttribute="trailing" constant="29" id="EP2-OE-cXn"/>
+                            <constraint firstItem="m8j-vf-tz1" firstAttribute="leading" secondItem="IWa-5F-rsY" secondAttribute="leadingMargin" constant="9" id="MNQ-qB-Cce"/>
+                            <constraint firstItem="xXU-IR-D0j" firstAttribute="top" secondItem="gPj-AZ-Wqi" secondAttribute="bottom" constant="14" id="NtL-Y5-4ue"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gPj-AZ-Wqi" secondAttribute="trailing" constant="28" id="bv8-tc-akc"/>
+                            <constraint firstItem="pBD-TZ-Ehd" firstAttribute="top" secondItem="2MU-wF-bBl" secondAttribute="bottom" constant="54" id="i8m-4X-6or"/>
+                            <constraint firstItem="xXU-IR-D0j" firstAttribute="leading" secondItem="IWa-5F-rsY" secondAttribute="leadingMargin" constant="9" id="jsO-Lc-eI0"/>
+                            <constraint firstItem="m8j-vf-tz1" firstAttribute="top" secondItem="xXU-IR-D0j" secondAttribute="bottom" constant="1" id="k1z-Wx-B9u"/>
+                            <constraint firstItem="gPj-AZ-Wqi" firstAttribute="top" secondItem="pBD-TZ-Ehd" secondAttribute="bottom" constant="25" id="k4S-rv-J66"/>
+                            <constraint firstItem="zML-7t-vSH" firstAttribute="top" secondItem="m8j-vf-tz1" secondAttribute="bottom" constant="15" id="mjm-hB-dYd"/>
+                            <constraint firstItem="pBD-TZ-Ehd" firstAttribute="centerX" secondItem="IWa-5F-rsY" secondAttribute="centerX" id="wdo-Xc-hM0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="QRImage" destination="pBD-TZ-Ehd" id="OTg-Vu-WJR"/>
+                        <outlet property="phoneNumber" destination="xXU-IR-D0j" id="54s-cd-0xH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhK-4u-hic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+</document>

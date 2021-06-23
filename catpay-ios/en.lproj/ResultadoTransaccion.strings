@@ -1,0 +1,64 @@
+/* Class = "UILabel"; text = "Transaccion Fallida"; ObjectID = "NXw-0x-ONE"; */
+"NXw-0x-ONE.text" = "Transaccion Fallida";
+
+/* Class = "UITextField"; placeholder = "BOD"; ObjectID = "8tA-HB-IWw"; */
+"8tA-HB-IWw.placeholder" = "BOD";
+
+/* Class = "UILabel"; text = "NÚMERO DE REFERENCIA"; ObjectID = "174-R9-pfH"; */
+"174-R9-pfH.text" = "REFERENCE NUMBER";
+
+/* Class = "UILabel"; text = "829694"; ObjectID = "I7z-6T-UR1"; */
+"I7z-6T-UR1.text" = "829694";
+
+/* Class = "UILabel"; text = "CLIENTE (BENEFICIARIO)"; ObjectID = "guN-bB-1at"; */
+"guN-bB-1at.text" = "CLIENT (ACQUIRING)";
+
+/* Class = "UILabel"; text = "Juan Vasquez"; ObjectID = "jxE-5v-K8j"; */
+"jxE-5v-K8j.text" = "Juan Vasquez";
+
+/* Class = "UILabel"; text = "TELEFONO (BENEFICIARIO)"; ObjectID = "CRc-Ba-yuk"; */
+"CRc-Ba-yuk.text" = "PHONE (ACQUIRING)";
+
+/* Class = "UILabel"; text = "04141234104"; ObjectID = "LYy-VQ-JsN"; */
+"LYy-VQ-JsN.text" = "04141234104";
+
+/* Class = "UILabel"; text = "BANCO (BENEFICIARIO)"; ObjectID = "fEf-v7-LhV"; */
+"fEf-v7-LhV.text" = "BANK ACCOUNT";
+
+/* Class = "UILabel"; text = "BOD Banco Occidental de Descuento, Banco Universal C.A."; ObjectID = "jcD-Pe-Skp"; */
+"jcD-Pe-Skp.text" = "BOD Banco Occidental de Descuento, Banco Universal C.A.";
+
+/* Class = "UILabel"; text = "MONTO"; ObjectID = "uer-2t-oBq"; */
+"uer-2t-oBq.text" = "AMOUNT";
+
+/* Class = "UILabel"; text = "Bs. 6.66"; ObjectID = "fY5-28-sAU"; */
+"fY5-28-sAU.text" = "Bs. 6.66";
+
+/* Class = "UILabel"; text = "FECHA"; ObjectID = "Luv-19-Sjz"; */
+"Luv-19-Sjz.text" = "DATE";
+
+/* Class = "UILabel"; text = "10/06/2021 3:11 p.m."; ObjectID = "fTo-N2-pSH"; */
+"fTo-N2-pSH.text" = "10/06/2021 3:11 p.m.";
+
+/* Class = "UILabel"; text = "CLIENTE PAGADOR"; ObjectID = "rg7-3S-RBu"; */
+"rg7-3S-RBu.text" = "CLIENTE (PAYER)";
+
+/* Class = "UILabel"; text = "Javier Millano"; ObjectID = "Cmg-U4-cjl"; */
+"Cmg-U4-cjl.text" = "Javier Millano";
+
+/* Class = "UILabel"; text = "CONCEPTO DEL PAGO"; ObjectID = "JOy-fi-5cv"; */
+"JOy-fi-5cv.text" = "PAYMENT CONCEPT";
+
+/* Class = "UILabel"; text = "Pago"; ObjectID = "O4S-eb-hoy"; */
+"O4S-eb-hoy.text" = "Pago";
+
+/* Class = "UITextField"; placeholder = "Deuda"; ObjectID = "UKI-RO-Vzi"; */
+"UKI-RO-Vzi.placeholder" = "";
+
+/* Class = "UILabel"; text = "Resultado de la transaccion"; ObjectID = "YJB-BA-Sli"; */
+"YJB-BA-Sli.text" = "Transacción";
+
+
+
+
+

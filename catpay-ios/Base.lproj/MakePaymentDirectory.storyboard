@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CAK-cf-BwP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Make Payment Directory View Controller-->
+        <scene sceneID="CDL-km-mHR">
+            <objects>
+                <viewController storyboardIdentifier="makePaymentDirectory" id="CAK-cf-BwP" customClass="MakePaymentDirectoryViewController" customModule="Pago_Express_BOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zPg-fW-xjG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jb4-6U-xvg" userLabel="BannerView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escanear Código QR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rl-ey-4Ek" customClass="CustomLabel" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="132.5" y="103" width="149.5" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="ZuX-Vw-gen"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWi-7V-RDe" userLabel="ButtonRealizarPago">
+                                        <rect key="frame" x="177" y="50" width="60" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="1HD-2M-Z9C"/>
+                                            <constraint firstAttribute="width" constant="60" id="RUq-gH-ccj"/>
+                                        </constraints>
+                                        <state key="normal" image="imgScanCode">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="escanearQRPressed:" destination="CAK-cf-BwP" eventType="touchUpInside" id="cVB-FQ-8Ag"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="P6x-6N-Q37"/>
+                                <color key="backgroundColor" name="PrimaryColor"/>
+                                <constraints>
+                                    <constraint firstItem="0Rl-ey-4Ek" firstAttribute="centerX" secondItem="jb4-6U-xvg" secondAttribute="centerX" id="967-eJ-eeG"/>
+                                    <constraint firstAttribute="height" constant="134" id="Bfp-5N-hsn"/>
+                                    <constraint firstItem="0Rl-ey-4Ek" firstAttribute="top" secondItem="YWi-7V-RDe" secondAttribute="bottom" constant="12" id="FJM-WW-922"/>
+                                    <constraint firstItem="YWi-7V-RDe" firstAttribute="centerX" secondItem="jb4-6U-xvg" secondAttribute="centerX" id="P0B-WH-c63"/>
+                                    <constraint firstItem="YWi-7V-RDe" firstAttribute="top" secondItem="jb4-6U-xvg" secondAttribute="top" constant="50" id="sqe-ap-7Ky"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeO-n1-DJD">
+                                <rect key="frame" x="0.0" y="134" width="414" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxg-qp-Y4U">
+                                        <rect key="frame" x="12" y="15.5" width="390" height="19.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo Disponible" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEw-Qm-9fD">
+                                                <rect key="frame" x="0.0" y="0.0" width="195" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bs. 845.456,98" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKl-SN-DPC">
+                                                <rect key="frame" x="195" y="0.0" width="195" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstItem="hxg-qp-Y4U" firstAttribute="leading" secondItem="BeO-n1-DJD" secondAttribute="leading" constant="12" id="NKg-cj-oa0"/>
+                                    <constraint firstAttribute="trailing" secondItem="hxg-qp-Y4U" secondAttribute="trailing" constant="12" id="TO9-Zw-Sxn"/>
+                                    <constraint firstAttribute="height" constant="50" id="YeC-DL-Ols"/>
+                                    <constraint firstItem="hxg-qp-Y4U" firstAttribute="centerY" secondItem="BeO-n1-DJD" secondAttribute="centerY" id="ojw-T8-xLZ"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AXf-yF-pEA">
+                                <rect key="frame" x="12" y="194" width="390" height="110.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿A quién deseas realizar el pago?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrI-gU-HU1">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Buscar contacto" translatesAutoresizingMaskIntoConstraints="NO" id="ne8-kS-H4l">
+                                        <rect key="frame" x="0.0" y="31.5" width="390" height="51"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="23k-Ta-w9Y">
+                                        <rect key="frame" x="0.0" y="90.5" width="390" height="20"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ogN-Zq-MMb">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="15"/>
+                                                <color key="tintColor" name="PrimaryColor"/>
+                                                <state key="normal" title="Agregar" image="plus" catalog="system">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="agregarContactoPressed:" destination="CAK-cf-BwP" eventType="touchUpInside" id="fPl-pG-bGk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="577.5" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XkN-F0-Uiu" customClass="SelfSizedTableView" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="309.5" width="414" height="577.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="contactCellPayment" textLabel="Pwz-TT-JfP" rowHeight="50" style="IBUITableViewCellStyleDefault" id="en1-2q-4aL" customClass="contactPaymentTableViewCell" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="en1-2q-4aL" id="lOh-JP-rW0">
+                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Nombre de contacto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pwz-TT-JfP">
+                                                    <rect key="frame" x="20" y="0.0" width="356.5" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nombreLabel" destination="Pwz-TT-JfP" id="w9N-Av-n8S"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Dd-NO-n57"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XkN-F0-Uiu" firstAttribute="trailing" secondItem="0Dd-NO-n57" secondAttribute="trailing" id="8hb-WJ-6ab"/>
+                            <constraint firstItem="BeO-n1-DJD" firstAttribute="trailing" secondItem="0Dd-NO-n57" secondAttribute="trailing" id="BZ4-pR-FnP"/>
+                            <constraint firstItem="XkN-F0-Uiu" firstAttribute="top" secondItem="AXf-yF-pEA" secondAttribute="bottom" constant="5" id="EPi-rC-pym"/>
+                            <constraint firstItem="jb4-6U-xvg" firstAttribute="trailing" secondItem="0Dd-NO-n57" secondAttribute="trailing" id="FCC-rt-wYf"/>
+                            <constraint firstItem="AXf-yF-pEA" firstAttribute="leading" secondItem="0Dd-NO-n57" secondAttribute="leading" constant="12" id="N0G-MQ-6M6"/>
+                            <constraint firstItem="jb4-6U-xvg" firstAttribute="leading" secondItem="0Dd-NO-n57" secondAttribute="leading" id="OHp-zZ-Vfo"/>
+                            <constraint firstItem="XkN-F0-Uiu" firstAttribute="leading" secondItem="0Dd-NO-n57" secondAttribute="leading" id="Pir-WE-xAq"/>
+                            <constraint firstItem="BeO-n1-DJD" firstAttribute="leading" secondItem="0Dd-NO-n57" secondAttribute="leading" id="daX-1f-H00"/>
+                            <constraint firstItem="BeO-n1-DJD" firstAttribute="top" secondItem="jb4-6U-xvg" secondAttribute="bottom" id="e47-xx-D8d"/>
+                            <constraint firstItem="jb4-6U-xvg" firstAttribute="top" secondItem="0Dd-NO-n57" secondAttribute="top" constant="-44" id="iGJ-iE-qlB"/>
+                            <constraint firstItem="AXf-yF-pEA" firstAttribute="top" secondItem="BeO-n1-DJD" secondAttribute="bottom" constant="10" id="lAW-uI-0hG"/>
+                            <constraint firstItem="0Dd-NO-n57" firstAttribute="trailing" secondItem="AXf-yF-pEA" secondAttribute="trailing" constant="12" id="lk0-gd-fvj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="saldoDisponibleLabel" destination="FKl-SN-DPC" id="Gs7-rp-WCD"/>
+                        <outlet property="searchBar" destination="ne8-kS-H4l" id="KbK-VD-QMg"/>
+                        <outlet property="tableView" destination="XkN-F0-Uiu" id="1Ek-aB-dtW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65z-ge-2gW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-414.49275362318843" y="12.723214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgScanCode" width="46" height="46"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.40000000596046448" green="0.70999997854232788" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

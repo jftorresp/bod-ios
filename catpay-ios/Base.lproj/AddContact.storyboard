@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MbQ-xi-QB4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Add Contact View Controller-->
+        <scene sceneID="wEP-wa-A61">
+            <objects>
+                <viewController storyboardIdentifier="AddContact" id="MbQ-xi-QB4" customClass="AddContactViewController" customModule="Pago_Express_BOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xeq-tU-irS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qu0-yi-WgH" userLabel="BannerView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directorio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85s-hP-jeI" customClass="CustomLabel" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="171.5" y="61" width="71.5" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="WdY-7W-zut"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGd-Ur-7St" userLabel="ButtonRealizarPago">
+                                        <rect key="frame" x="177" y="8" width="60" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="8Y8-0m-FFK"/>
+                                            <constraint firstAttribute="height" constant="41" id="WB9-Fq-u5D"/>
+                                        </constraints>
+                                        <state key="normal" image="imgDirectory"/>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Cu6-B2-dmO"/>
+                                <color key="backgroundColor" name="PrimaryColor"/>
+                                <constraints>
+                                    <constraint firstItem="gGd-Ur-7St" firstAttribute="top" secondItem="Qu0-yi-WgH" secondAttribute="top" constant="8" id="2hT-aH-Sdf"/>
+                                    <constraint firstItem="85s-hP-jeI" firstAttribute="top" secondItem="gGd-Ur-7St" secondAttribute="bottom" constant="12" id="CL9-cS-a3L"/>
+                                    <constraint firstItem="85s-hP-jeI" firstAttribute="centerX" secondItem="Qu0-yi-WgH" secondAttribute="centerX" id="Duk-9V-JiY"/>
+                                    <constraint firstItem="gGd-Ur-7St" firstAttribute="centerX" secondItem="Qu0-yi-WgH" secondAttribute="centerX" id="dM4-xK-jFk"/>
+                                    <constraint firstAttribute="height" constant="90" id="iAe-te-cVr"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿A quién deseas agregar?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWW-xQ-SNn">
+                                <rect key="frame" x="20" y="142" width="374" height="20"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8Aj-Iu-1lP">
+                                <rect key="frame" x="20" y="174" width="374" height="118"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre y Apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i43-0Q-pbw">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Y9U-Tn-CSD">
+                                        <rect key="frame" x="0.0" y="42" width="374" height="34"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqP-eW-nTu">
+                                                <rect key="frame" x="0.0" y="0.0" width="72" height="34"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y6a-P2-8Ia">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="34"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBu-9Z-hpv">
+                                                        <rect key="frame" x="48" y="0.0" width="24" height="34"/>
+                                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="U50-98-GDB"/>
+                                                        </constraints>
+                                                        <state key="normal" image="icDropdownCyan"/>
+                                                        <connections>
+                                                            <action selector="tipoCedulaPressed:" destination="MbQ-xi-QB4" eventType="touchUpInside" id="UUn-2W-GHf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="72" id="9eZ-U7-Ygg"/>
+                                                </constraints>
+                                            </stackView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cédula " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wDY-c2-zQM">
+                                                <rect key="frame" x="84" y="0.0" width="290" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="PyB-Q0-MEq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hOe-me-CbM">
+                                        <rect key="frame" x="0.0" y="84" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1Iu-7u-5p2">
+                                <rect key="frame" x="20" y="821" width="374" height="21"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4F-oW-IQ9">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="21"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                        <state key="normal" title=" Cancelar" image="imgCancel">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelarPressed:" destination="MbQ-xi-QB4" eventType="touchUpInside" id="Nq0-Fg-70g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dne-yh-8Nk">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="21"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                        <state key="normal" title=" Guardar" image="imgSave1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="guardarPressed:" destination="MbQ-xi-QB4" eventType="touchUpInside" id="a5B-kD-QeE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TIy-mg-BvN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qu0-yi-WgH" firstAttribute="top" secondItem="TIy-mg-BvN" secondAttribute="top" id="5UO-79-syk"/>
+                            <constraint firstItem="Qu0-yi-WgH" firstAttribute="trailing" secondItem="TIy-mg-BvN" secondAttribute="trailing" id="8tj-ux-qmD"/>
+                            <constraint firstItem="TIy-mg-BvN" firstAttribute="trailing" secondItem="1Iu-7u-5p2" secondAttribute="trailing" constant="20" id="GpX-qp-Rzu"/>
+                            <constraint firstItem="1Iu-7u-5p2" firstAttribute="leading" secondItem="TIy-mg-BvN" secondAttribute="leading" constant="20" id="I6x-3h-hok"/>
+                            <constraint firstItem="TIy-mg-BvN" firstAttribute="trailing" secondItem="8Aj-Iu-1lP" secondAttribute="trailing" constant="20" id="Wgb-8g-CKw"/>
+                            <constraint firstItem="8Aj-Iu-1lP" firstAttribute="top" secondItem="wWW-xQ-SNn" secondAttribute="bottom" constant="12" id="YKi-jJ-L8c"/>
+                            <constraint firstItem="wWW-xQ-SNn" firstAttribute="top" secondItem="Qu0-yi-WgH" secondAttribute="bottom" constant="8" id="fYN-m2-iCV"/>
+                            <constraint firstItem="1Iu-7u-5p2" firstAttribute="centerX" secondItem="Xeq-tU-irS" secondAttribute="centerX" id="hbf-YP-8dk"/>
+                            <constraint firstItem="8Aj-Iu-1lP" firstAttribute="leading" secondItem="TIy-mg-BvN" secondAttribute="leading" constant="20" id="mOR-Zh-ngE"/>
+                            <constraint firstItem="Qu0-yi-WgH" firstAttribute="leading" secondItem="TIy-mg-BvN" secondAttribute="leading" id="miq-ht-O6f"/>
+                            <constraint firstItem="TIy-mg-BvN" firstAttribute="trailing" secondItem="wWW-xQ-SNn" secondAttribute="trailing" constant="20" id="sgZ-Cs-kMu"/>
+                            <constraint firstItem="TIy-mg-BvN" firstAttribute="bottom" secondItem="1Iu-7u-5p2" secondAttribute="bottom" constant="20" id="uFj-6g-WZg"/>
+                            <constraint firstItem="wWW-xQ-SNn" firstAttribute="leading" secondItem="TIy-mg-BvN" secondAttribute="leading" constant="20" id="xF1-vv-Rmm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelarBtn" destination="B4F-oW-IQ9" id="coh-gA-A1x"/>
+                        <outlet property="cedulaTextField" destination="wDY-c2-zQM" id="ISL-KJ-gaa"/>
+                        <outlet property="guardarBtn" destination="Dne-yh-8Nk" id="Lnj-49-QWN"/>
+                        <outlet property="nombreTextField" destination="i43-0Q-pbw" id="DND-Hv-9g8"/>
+                        <outlet property="telefonoTextField" destination="hOe-me-CbM" id="A5c-bM-apr"/>
+                        <outlet property="tipoCedulaBtn" destination="XBu-9Z-hpv" id="CyR-s6-IFE"/>
+                        <outlet property="tipoCedulaTextField" destination="Y6a-P2-8Ia" id="3yW-by-XtH"/>
+                        <outlet property="viewHeader" destination="Qu0-yi-WgH" id="JsS-GY-uZY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYh-kv-I8U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11.594202898550726" y="14.732142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icDropdownCyan" width="24" height="24"/>
+        <image name="imgCancel" width="21.5" height="21"/>
+        <image name="imgDirectory" width="61" height="42.5"/>
+        <image name="imgSave1" width="21.5" height="21"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.40000000596046448" green="0.70999997854232788" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

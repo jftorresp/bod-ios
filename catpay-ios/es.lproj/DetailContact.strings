@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Directorio"; ObjectID = "jtK-Qa-rE5"; */
+"jtK-Qa-rE5.text" = "Directorio";
+
+/* Class = "UIButton"; normalTitle = "Modificar"; ObjectID = "8Nd-HZ-ZKJ"; */
+"8Nd-HZ-ZKJ.normalTitle" = "Modificar";
+
+/* Class = "UIButton"; normalTitle = "Eliminar Contacto"; ObjectID = "L8Q-SV-zR9"; */
+"L8Q-SV-zR9.normalTitle" = "Eliminar Contacto";
+
+/* Class = "UIButton"; normalTitle = "Agregar Teléfono"; ObjectID = "l4F-AA-783"; */
+"l4F-AA-783.normalTitle" = "Agregar Teléfono";
+
+/* Class = "UIButton"; normalTitle = "Ir al Directorio"; ObjectID = "ihR-Mz-QtV"; */
+"ihR-Mz-QtV.normalTitle" = "Ir al Directorio";

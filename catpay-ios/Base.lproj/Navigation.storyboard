@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Qx-el-8uC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Nagivation View Controller-->
+        <scene sceneID="DhV-ao-dea">
+            <objects>
+                <viewController storyboardIdentifier="Navigation" id="9Qx-el-8uC" customClass="NagivationViewController" customModule="Pago_Express_BOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OJY-b0-VRM"/>
+                        <viewControllerLayoutGuide type="bottom" id="qy0-Vs-9JE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9GL-fr-2Qu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAg-a7-OYS" userLabel="ViewPantalla">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8n4-68-5ot" userLabel="ButtonCancel">
+                                        <rect key="frame" x="14" y="10" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="8w1-FO-bep"/>
+                                            <constraint firstAttribute="height" constant="24" id="nNH-YK-911"/>
+                                        </constraints>
+                                        <state key="normal" image="icCancel"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="9Qx-el-8uC" eventType="touchUpInside" id="0wP-7q-8t3"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version -v1.1.0.12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJ4-Ih-zRB" userLabel="Version">
+                                        <rect key="frame" x="45" y="761" width="325" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="RBq-qh-f17"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright 2016-2017 Phoenix Software 3000, C.A." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5P-p8-gWw" userLabel="Copyright">
+                                        <rect key="frame" x="18" y="792" width="379" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="k9w-uf-ZrP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOD Banco Universal -RIF: J-30061946-0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJQ-pi-55t" userLabel="BODRIF: J-30061946-0">
+                                        <rect key="frame" x="45" y="776.5" width="325" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="2VO-Vf-kcC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DEMO ENVIRONMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbT-hD-6Qh" userLabel="ENVIRONMENT">
+                                        <rect key="frame" x="46" y="745.5" width="324" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="oqC-sm-Oeb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoNavigation" translatesAutoresizingMaskIntoConstraints="NO" id="X0e-Cg-di5">
+                                        <rect key="frame" x="179.5" y="712" width="55" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="55" id="VnA-mx-Efe"/>
+                                            <constraint firstAttribute="height" constant="33" id="kzn-Ej-f0X"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icNavHome" translatesAutoresizingMaskIntoConstraints="NO" id="fKo-wX-Drh">
+                                        <rect key="frame" x="27" y="220" width="22" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SJ-nM-DDl" userLabel="ButtonInicio">
+                                        <rect key="frame" x="20" y="213" width="364" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="57" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Inicio">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="makePayment:" destination="9Qx-el-8uC" eventType="touchUpInside" id="p4H-Xa-C2v"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gYR-Jf-VIZ" userLabel="Line1">
+                                        <rect key="frame" x="69" y="247" width="314" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icNavDirectory" translatesAutoresizingMaskIntoConstraints="NO" id="UKR-1H-dgh">
+                                        <rect key="frame" x="26" y="282" width="22" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tF-XY-cdz" userLabel="ButtonDirectorio">
+                                        <rect key="frame" x="20" y="275" width="364" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="57" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Directorio">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="directoryPressed:" destination="9Qx-el-8uC" eventType="touchUpInside" id="2Mq-ax-Kyy"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fNk-4C-Zvu" userLabel="Line2">
+                                        <rect key="frame" x="70" y="309" width="314" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icNavHistory" translatesAutoresizingMaskIntoConstraints="NO" id="XHU-GM-0Sk">
+                                        <rect key="frame" x="28" y="343" width="19" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8m-6i-IU7" userLabel="ButtonHistory">
+                                        <rect key="frame" x="20" y="334" width="364" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="57" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Historico de Pagos">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="paymentHistory:" destination="9Qx-el-8uC" eventType="touchUpInside" id="n0U-sa-cJs"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OVI-c5-Krb" userLabel="Line3">
+                                        <rect key="frame" x="70" y="371" width="314" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icNavProfile" translatesAutoresizingMaskIntoConstraints="NO" id="rF8-dP-oem">
+                                        <rect key="frame" x="28" y="407" width="19" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ww8-ZQ-z33" userLabel="ButtonPerfil">
+                                        <rect key="frame" x="20" y="398" width="364" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="57" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Perfil">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="perfil:" destination="9Qx-el-8uC" eventType="touchUpInside" id="U3K-KG-MCc"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Vx-vn-o0z" userLabel="Line4">
+                                        <rect key="frame" x="70" y="435" width="314" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icNavQr" translatesAutoresizingMaskIntoConstraints="NO" id="a8S-ce-Lxh">
+                                        <rect key="frame" x="28" y="466" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0Z-PI-A95" userLabel="ButtonCode">
+                                        <rect key="frame" x="20" y="463" width="364" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="57" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="QR">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="codigoPago:" destination="9Qx-el-8uC" eventType="touchUpInside" id="D5h-1Z-k0e"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3eD-7Q-8B2" userLabel="Line5">
+                                        <rect key="frame" x="70" y="498" width="314" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icNavLogout" translatesAutoresizingMaskIntoConstraints="NO" id="9Jh-N4-wXn">
+                                        <rect key="frame" x="28" y="528" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61o-B1-2Ka" userLabel="ButtonSalir">
+                                        <rect key="frame" x="20" y="527" width="364" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <inset key="contentEdgeInsets" minX="57" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Cerrar Sesion">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logout:" destination="9Qx-el-8uC" eventType="touchUpInside" id="EyL-bL-bvR"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xsK-qj-1EP" userLabel="Line6">
+                                        <rect key="frame" x="70" y="563" width="314" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="wzh-9B-97z">
+                                        <rect key="frame" x="28" y="99" width="358" height="58"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juan Vasquez" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrS-MK-SMq" userLabel="NombreUsuario">
+                                                <rect key="frame" x="0.0" y="0.0" width="358" height="37"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="27"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="juan.vasquez@technifiser.com" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WY-E5-sdE" userLabel="Correo">
+                                                <rect key="frame" x="0.0" y="40" width="358" height="18"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.71372549019999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="p5P-p8-gWw" secondAttribute="trailing" constant="17" id="1sW-pT-0Fu"/>
+                                    <constraint firstItem="dbT-hD-6Qh" firstAttribute="top" secondItem="X0e-Cg-di5" secondAttribute="bottom" constant="0.5" id="3YD-so-Tcd"/>
+                                    <constraint firstItem="8n4-68-5ot" firstAttribute="top" secondItem="IAg-a7-OYS" secondAttribute="top" constant="10" id="4X8-5e-0oq"/>
+                                    <constraint firstItem="hJQ-pi-55t" firstAttribute="top" secondItem="gJ4-Ih-zRB" secondAttribute="bottom" constant="0.5" id="5y5-uE-zsF"/>
+                                    <constraint firstItem="dbT-hD-6Qh" firstAttribute="leading" secondItem="IAg-a7-OYS" secondAttribute="leading" constant="46" id="7vh-Fa-uai"/>
+                                    <constraint firstAttribute="trailing" secondItem="wzh-9B-97z" secondAttribute="trailing" constant="28" id="AGg-kg-CQY"/>
+                                    <constraint firstItem="p5P-p8-gWw" firstAttribute="top" secondItem="hJQ-pi-55t" secondAttribute="bottom" constant="0.5" id="BNt-RO-kVL"/>
+                                    <constraint firstItem="wzh-9B-97z" firstAttribute="top" secondItem="8n4-68-5ot" secondAttribute="bottom" constant="65" id="DgE-lT-6uR"/>
+                                    <constraint firstAttribute="bottom" secondItem="X0e-Cg-di5" secondAttribute="bottom" constant="73" id="ONd-Gl-Tp4"/>
+                                    <constraint firstAttribute="trailing" secondItem="hJQ-pi-55t" secondAttribute="trailing" constant="44" id="R4h-AS-Qzt"/>
+                                    <constraint firstAttribute="trailing" secondItem="dbT-hD-6Qh" secondAttribute="trailing" constant="44" id="WlP-UK-aHv"/>
+                                    <constraint firstAttribute="trailing" secondItem="gJ4-Ih-zRB" secondAttribute="trailing" constant="44" id="XA8-Lv-nse"/>
+                                    <constraint firstItem="gJ4-Ih-zRB" firstAttribute="leading" secondItem="IAg-a7-OYS" secondAttribute="leading" constant="45" id="Xz3-W0-fLr"/>
+                                    <constraint firstItem="gJ4-Ih-zRB" firstAttribute="top" secondItem="dbT-hD-6Qh" secondAttribute="bottom" constant="0.5" id="b6e-sc-95q"/>
+                                    <constraint firstItem="X0e-Cg-di5" firstAttribute="centerX" secondItem="IAg-a7-OYS" secondAttribute="centerX" id="kfY-BN-ZsW"/>
+                                    <constraint firstItem="8n4-68-5ot" firstAttribute="leading" secondItem="IAg-a7-OYS" secondAttribute="leading" constant="14" id="kz5-Qa-jVZ"/>
+                                    <constraint firstItem="wzh-9B-97z" firstAttribute="leading" secondItem="IAg-a7-OYS" secondAttribute="leading" constant="28" id="oPG-Ws-rJu"/>
+                                    <constraint firstItem="hJQ-pi-55t" firstAttribute="leading" secondItem="IAg-a7-OYS" secondAttribute="leading" constant="45" id="oei-cv-Kcx"/>
+                                    <constraint firstItem="p5P-p8-gWw" firstAttribute="leading" secondItem="IAg-a7-OYS" secondAttribute="leading" constant="18" id="so9-mO-qgP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IAg-a7-OYS" firstAttribute="top" secondItem="OJY-b0-VRM" secondAttribute="bottom" id="48I-mu-IDN"/>
+                            <constraint firstItem="IAg-a7-OYS" firstAttribute="bottom" secondItem="qy0-Vs-9JE" secondAttribute="top" id="GXE-wf-DN3"/>
+                            <constraint firstItem="IAg-a7-OYS" firstAttribute="leading" secondItem="9GL-fr-2Qu" secondAttribute="leading" id="c5X-aS-mdZ"/>
+                            <constraint firstAttribute="trailing" secondItem="IAg-a7-OYS" secondAttribute="trailing" id="iXw-N9-3TN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bankName" destination="hJQ-pi-55t" id="GzK-ZK-8LJ"/>
+                        <outlet property="containerView" destination="IAg-a7-OYS" id="tYA-bh-lB7"/>
+                        <outlet property="copyright" destination="p5P-p8-gWw" id="KsX-Ce-nBx"/>
+                        <outlet property="email" destination="3WY-E5-sdE" id="x67-sb-JMv"/>
+                        <outlet property="environment" destination="dbT-hD-6Qh" id="HBx-Y5-opP"/>
+                        <outlet property="logoImg" destination="X0e-Cg-di5" id="1GB-xA-rf0"/>
+                        <outlet property="logoImgContraintCenterY" destination="3YD-so-Tcd" id="kzT-1l-sf8"/>
+                        <outlet property="username" destination="KrS-MK-SMq" id="xWr-IK-W5m"/>
+                        <outlet property="version" destination="gJ4-Ih-zRB" id="zFt-Dh-cgu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6P-9H-psC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="72.321428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icCancel" width="24" height="24"/>
+        <image name="icNavDirectory" width="21" height="21"/>
+        <image name="icNavHistory" width="19" height="17"/>
+        <image name="icNavHome" width="22" height="21"/>
+        <image name="icNavLogout" width="21" height="21"/>
+        <image name="icNavProfile" width="19" height="18"/>
+        <image name="icNavQr" width="21" height="21"/>
+        <image name="logoNavigation" width="95" height="58"/>
+    </resources>
+</document>

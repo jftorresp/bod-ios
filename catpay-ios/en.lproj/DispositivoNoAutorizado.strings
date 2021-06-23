@@ -1,0 +1,13 @@
+
+/* Class = "UILabel"; text = "Despues de seguir las instrucciones, ingresa a la sesion nuevamente."; ObjectID = "B4F-FH-1UQ"; */
+"B4F-FH-1UQ.text" = "After following the instructions, login again.";
+
+/* Class = "UILabel"; text = "Nuevo Dispositivo"; ObjectID = "BbK-1H-psn"; */
+"BbK-1H-psn.text" = "New Device";
+
+/* Class = "UILabel"; text = "Te enviamos un correo con instrucciones para permitir este dispositivo iniciar sesión con tu cuenta"; ObjectID = "nN2-NX-LHF"; */
+"nN2-NX-LHF.text" = "We send you an email with instructions to allow this device to login with your account";
+
+/* Class = "UILabel"; text = "Dispositivo no conocido"; ObjectID = "uvY-l8-fyb"; */
+"uvY-l8-fyb.text" = "Unknown device";
+

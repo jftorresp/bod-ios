@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Aprobado"; ObjectID = "0qE-nH-iA5"; */
+"0qE-nH-iA5.text" = "Aprobado";
+
+/* Class = "UILabel"; text = "Banco del Pagador"; ObjectID = "7Iy-CS-bCe"; */
+"7Iy-CS-bCe.text" = "BANK ACCOUNT (ACQUIRING)";
+
+/* Class = "UILabel"; text = "Monto"; ObjectID = "86b-fV-sVn"; */
+"86b-fV-sVn.text" = "AMOUNT";
+
+/* Class = "UILabel"; text = "14 de Junio 2017"; ObjectID = "KnA-mo-oIO"; */
+"KnA-mo-oIO.text" = "14 de Junio 2017";
+
+/* Class = "UILabel"; text = "Concepto del Pago"; ObjectID = "PyB-55-lwX"; */
+"PyB-55-lwX.text" = "PAYMENT CONCEPT";
+
+/* Class = "UILabel"; text = "Juan Vasquez"; ObjectID = "Vvg-FR-sEW"; */
+"Vvg-FR-sEW.text" = "Juan Vasquez";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "WXh-1P-8eW"; */
+"WXh-1P-8eW.text" = "STATUS";
+
+/* Class = "UILabel"; text = "Nombre del Pagador "; ObjectID = "bwE-2M-P9X"; */
+"bwE-2M-P9X.text" = "TRANSACTION ID";
+
+/* Class = "UILabel"; text = "Pago de autolavado"; ObjectID = "gFW-bt-kdd"; */
+"gFW-bt-kdd.text" = "Pago de autolavado";
+
+/* Class = "UILabel"; text = "Fecha"; ObjectID = "gxP-DS-7YV"; */
+"gxP-DS-7YV.text" = "DATE";
+
+/* Class = "UILabel"; text = "Provincial"; ObjectID = "jce-iC-zgh"; */
+"jce-iC-zgh.text" = "Provincial";
+
+/* Class = "UILabel"; text = "Detalle de Pago Recibido"; ObjectID = "uSm-QC-33F"; */
+"uSm-QC-33F.text" = "Payment Received Details";
+
+/* Class = "UILabel"; text = "+ 250.000,00 Bs"; ObjectID = "vUQ-UZ-7dn"; */
+"vUQ-UZ-7dn.text" = "+ 250.000,00 Bs";

@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Directorio"; ObjectID = "KQt-uc-bUZ"; */
+"KQt-uc-bUZ.text" = "Directorio";
+
+/* Class = "UITextField"; placeholder = "Buscar contacto"; ObjectID = "Jv7-E8-ze9"; */
+"Jv7-E8-ze9.placeholder" = "Buscar contacto";
+
+/* Class = "UIButton"; normalTitle = "Agregar"; ObjectID = "VK0-wG-d5P"; */
+"VK0-wG-d5P.normalTitle" = "Agregar";

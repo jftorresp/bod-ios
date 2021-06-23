@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Edit Contact Phone View Controller-->
+        <scene sceneID="IKa-e8-zTU">
+            <objects>
+                <viewController storyboardIdentifier="EditPhones" id="HBk-Wb-8mN" customClass="EditContactPhoneViewController" customModule="Pago_Express_BOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="anN-xf-KLP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXT-no-MkJ" userLabel="BannerView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directorio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40w-TZ-v1E" customClass="CustomLabel" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="171.5" y="61" width="71.5" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="YWa-2Y-dtZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RdJ-8o-c7c" userLabel="ButtonRealizarPago">
+                                        <rect key="frame" x="177" y="8" width="60" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="5pc-8Q-csY"/>
+                                            <constraint firstAttribute="height" constant="41" id="7bo-73-mBi"/>
+                                        </constraints>
+                                        <state key="normal" image="imgDirectory"/>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="xB5-iL-6tC"/>
+                                <color key="backgroundColor" name="PrimaryColor"/>
+                                <constraints>
+                                    <constraint firstItem="RdJ-8o-c7c" firstAttribute="top" secondItem="RXT-no-MkJ" secondAttribute="top" constant="8" id="8rU-Zr-5bv"/>
+                                    <constraint firstItem="40w-TZ-v1E" firstAttribute="centerX" secondItem="RXT-no-MkJ" secondAttribute="centerX" id="EZp-2W-YJx"/>
+                                    <constraint firstItem="40w-TZ-v1E" firstAttribute="top" secondItem="RdJ-8o-c7c" secondAttribute="bottom" constant="12" id="XSf-89-Gil"/>
+                                    <constraint firstItem="RdJ-8o-c7c" firstAttribute="centerX" secondItem="RXT-no-MkJ" secondAttribute="centerX" id="YQm-8H-akB"/>
+                                    <constraint firstAttribute="height" constant="90" id="oz3-Sv-Xnd"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="aX9-Ow-TTj">
+                                <rect key="frame" x="40.5" y="821" width="333" height="21"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF7-Y5-r2Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="94.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                        <state key="normal" title="  Cancelar" image="imgCancel">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelarPressed:" destination="HBk-Wb-8mN" eventType="touchUpInside" id="UeE-Gx-5nN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpi-Jz-bBq">
+                                        <rect key="frame" x="244.5" y="0.0" width="88.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                        <state key="normal" title="  Guardar" image="imgSave1">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="guardarPressed:" destination="HBk-Wb-8mN" eventType="touchUpInside" id="irJ-r7-rMu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdA-Ak-PyD">
+                                <rect key="frame" x="20" y="154" width="374" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBb-vj-Wf7">
+                                        <rect key="frame" x="0.0" y="0.0" width="74" height="34"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gmb-cV-Wgk">
+                                        <rect key="frame" x="74" y="0.0" width="300" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="GV4-Sx-PYo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YCx-C0-d7x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RXT-no-MkJ" firstAttribute="leading" secondItem="YCx-C0-d7x" secondAttribute="leading" id="5kF-LR-SxZ"/>
+                            <constraint firstItem="zdA-Ak-PyD" firstAttribute="leading" secondItem="YCx-C0-d7x" secondAttribute="leading" constant="20" id="9rU-u5-Wn0"/>
+                            <constraint firstItem="RXT-no-MkJ" firstAttribute="top" secondItem="YCx-C0-d7x" secondAttribute="top" id="Gnx-J6-4bI"/>
+                            <constraint firstItem="aX9-Ow-TTj" firstAttribute="centerX" secondItem="anN-xf-KLP" secondAttribute="centerX" id="I62-Pa-gC5"/>
+                            <constraint firstItem="YCx-C0-d7x" firstAttribute="trailing" secondItem="zdA-Ak-PyD" secondAttribute="trailing" constant="20" id="JPn-61-rSS"/>
+                            <constraint firstItem="YCx-C0-d7x" firstAttribute="bottom" secondItem="aX9-Ow-TTj" secondAttribute="bottom" constant="20" id="aKl-uO-Cc8"/>
+                            <constraint firstItem="RXT-no-MkJ" firstAttribute="trailing" secondItem="YCx-C0-d7x" secondAttribute="trailing" id="hSo-Lh-Sxe"/>
+                            <constraint firstItem="zdA-Ak-PyD" firstAttribute="top" secondItem="RXT-no-MkJ" secondAttribute="bottom" constant="20" id="u4t-7l-meJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="guardarBtn" destination="Qpi-Jz-bBq" id="ixY-Tg-rvl"/>
+                        <outlet property="telefonoTxtField" destination="gmb-cV-Wgk" id="YJD-Io-g3D"/>
+                        <outlet property="viewHeader" destination="RXT-no-MkJ" id="ApH-UX-b27"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3j2-GP-ffv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="158"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgCancel" width="21.5" height="21"/>
+        <image name="imgDirectory" width="61" height="42.5"/>
+        <image name="imgSave1" width="21.5" height="21"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.40000000596046448" green="0.70999997854232788" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

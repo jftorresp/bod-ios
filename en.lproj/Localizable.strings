@@ -1,0 +1,141 @@
+/* 
+  Localizable.strings
+  catpay-ios
+
+  Created by Mobile Dev 01 on 6/20/17.
+  Copyright © 2017 Technifiser. All rights reserved.
+*/
+
+notification.login = "Login";
+
+notification.forgotPassword = "Recover password";
+
+notification.changePassword = "Change password";
+
+notification.change.incorrect.password = "Contraseña incorrecta.";
+
+notification.password.conditions = "Verifica las condiciones de creación de contraseña";
+
+notification.user = "Introduce your phone number";
+
+notification.error.password.validation = "La contraseña debe cumplir las siguientes condiciones:\n1. Longitud mínima 8 caracteres, máxima 10 caracteres.\n2. Debe tener al menos: un carácter especial, una letra en mayúscula, una letra en minúscula, un carácter numérico.\n3. Los caracteres especiales permitidos son los siguientes: ! @ # $ % & * ( ) _ - + = { } [ ] \ | : ; \" ' < > , . ? / \n4. No puede contener espacios en blanco.\n5. No puede contener caracteres numéricos iguales o consecutivos.";
+
+notification.userInvalid = "Introduce a valid phone number (11 digits)";
+
+notification.conceptInvalid = "Introduce un concepto de pago";
+
+notification.passwordExpired = "Dear customer, your password to access Pago Express BOD has expired. Update it in the option \"User Unlock or Password Regeneration\"";
+
+notification.password = "Introduce your password";
+
+notification.passwordDoesntMatch =  "Password doesn't match";
+
+notification.titleInvalid = "¡Attention!";
+
+notification.firstNameInvalid = "Introduce your name";
+
+notification.firstNameInvalidCharacters = "Enter a first name without special characters";
+
+notification.lastNameInvalid = "Introduce your last name";
+
+notification.lastNameInvalidCharacters = "Enter a last name without special characters";
+
+notification.documentIdInvalid = "Introduce your identification";
+
+notification.documentIdInvalidDigit = "Introduce a valid document id";
+
+notification.invalidPassword = "La contraseña debe tener una longitud entre 8 y 10 caracteres";
+
+notification.emailInvalid = "Introduce your email address";
+
+notification.numberInvalid = "* Phone number: ";
+
+notification.documentInvalid  = "* Document id: ";
+
+notification.newPassword = "New password field cannot be empty";
+
+notification.bank = "Introduce a valid bank account";
+
+notification.authenticating = "Authenticating...";
+
+notification.creatingAccount = "Creating registry...";
+
+notification.changing_password = "Updating...";
+
+notification.session_expired = "Session expired";
+
+notification.session_expired_message = "Your session expired. You must login again.";
+
+notification.server_in_maintenance = "Connection error. Please try again later.";
+
+notification.server_inactive = "Unavailable Service, please try again later.";
+
+notification.no_internet_connection = "You don't have internet connection";
+
+notification.logging_out = "Logging out...";
+
+notification.sentDetailsPaymet = "Payment Sent Details";
+
+notification.receivedDetailsPaymet = "Payment Received Details";
+
+notification.invalidQR = "Invalid code";
+
+notification.loading = "Loading...";
+
+notification.accountDoesntExist = "Account doesn't exists";
+
+notification.mountEmpty = "Introduce a valid amount";
+
+notification.youSent = "You sent";
+
+notification.sentYou = "Sent you";
+
+notification.approved = "Approved";
+
+notification.rejected = "Rejected";
+
+notification.waiting = "Waiting";
+
+notification.logging_out_accept = "Accept";
+
+notification.logging_out_close = "Cancel";
+
+notification.logging_out_tittle = "Logout?";
+
+notification.logging_out_message = "Are you sure you want to log out?" ;
+
+notification.verification_Indicator = "Checking..." ;
+
+notification.InvalidCode_Verification = "Invalid code, please try again";
+
+notification.new_password_message = "Password modified successfully";
+
+notification.transactionTrue = "TRANSACCION APROBADA";
+
+notification.transactionTrueInHistory = "TRANSACCION APROBADA";
+
+notification.transactionForbidden = "Dear customer, activate your Pago Express BOD service through BOD Digital Banking";
+
+notification.termsAndConditions = "you must accept the terms and conditions of use to continue";
+
+notification.titleTermsAndConditions = "Terms and conditions of use";
+
+notification.ForceUpdateTitle = "New update";
+
+notification.forceUpdateMessage  = "Please update the application";
+
+notification.forceUpdateButton = "Update";
+
+notification.validateEmail = "Please check that the email contains valid data";
+
+notification.register = "Register";
+
+notification.register_msg = "Congrats! You have completed your registration process successfully.";
+
+notification.multipleConnections = "You have multiple connections. For prevention, all were closed";
+
+notification.inactiveUser = "Usuario inactivo.";
+
+notification.statusDesafiliadoNoRegistro = "Estimado cliente, para poder afiliarte a este servicio debes ingresar en la Banca Digital BOD: \n - Haz clic en la opción: 'Solicitudes', \n - Luego selecciona: 'Servicios BOD', \n - Marca la opción: 'Alifiación Pago Express'.";
+
+notificacion.statusActivoNoRegistrado = "Estimado cliente, para poder disfrutar de este servicio debe ingresar a la opción 'Registrarse' y seguir las instrucciones.";

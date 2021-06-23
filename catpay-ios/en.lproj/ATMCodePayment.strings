@@ -1,0 +1,22 @@
+
+/* Class = "UILabel"; text = "."; ObjectID = "5yE-sQ-YPu"; */
+"5yE-sQ-YPu.text" = ".";
+
+/* Class = "UILabel"; text = "Introduce la clave que utilizas para cajeros automaticos"; ObjectID = "FKs-17-v64"; */
+"FKs-17-v64.text" = "Introduce your ATM pin code";
+
+/* Class = "UILabel"; text = "No guardaremos tu codigo de cajero automatico"; ObjectID = "dPW-ia-ULF"; */
+"dPW-ia-ULF.text" = "We won't save your ATM Code";
+
+/* Class = "UILabel"; text = "."; ObjectID = "dZj-7m-qFF"; */
+"dZj-7m-qFF.text" = ".";
+
+/* Class = "UILabel"; text = "Ingresa clave"; ObjectID = "mHc-yS-OIs"; */
+"mHc-yS-OIs.text" = "Introduce your pin";
+
+/* Class = "UILabel"; text = "."; ObjectID = "w82-AO-3lA"; */
+"w82-AO-3lA.text" = ".";
+
+/* Class = "UILabel"; text = "."; ObjectID = "wWg-uj-G2m"; */
+"wWg-uj-G2m.text" = ".";
+

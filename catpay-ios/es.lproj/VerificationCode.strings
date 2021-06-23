@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Ingresa el codigo que enviamos a tu celular"; ObjectID = "7hZ-Q5-81h"; */
+"7hZ-Q5-81h.text" = "Ingresa el código que enviamos a tu celular";
+
+/* Class = "UITextField"; placeholder = "Introduce el codigo"; ObjectID = "egU-9w-vEw"; */
+"egU-9w-vEw.placeholder" = "Introduce el código";
+
+/* Class = "UIButton"; normalTitle = "Validar"; ObjectID = "f18-Ce-kjL"; */
+"f18-Ce-kjL.normalTitle" = "Validar";
+
+/* Class = "UILabel"; text = "Verificacion de Numero Telefonico"; ObjectID = "ipj-iS-pyy"; */
+"ipj-iS-pyy.text" = "Verificación de Número Telefónico";
+
+/* Class = "UILabel"; text = "04122276107"; ObjectID = "ptZ-jN-z2p"; */
+"ptZ-jN-z2p.text" = "04122276107";
+
+"DDD-SE-3do.text" = "El código es sensible a mayúsculas y minúsculas";
+

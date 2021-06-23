@@ -1,0 +1,36 @@
+
+/* Class = "UIButton"; normalTitle = "Inicio"; ObjectID = "1SJ-nM-DDl"; */
+"1SJ-nM-DDl.normalTitle" = "Inicio";
+
+/* Class = "UILabel"; text = "juan.vasquez@technifiser.com"; ObjectID = "3WY-E5-sdE"; */
+"3WY-E5-sdE.text" = "juan.vasquez@technifiser.com";
+
+/* Class = "UIButton"; normalTitle = "Cerrar Sesion"; ObjectID = "61o-B1-2Ka"; */
+"61o-B1-2Ka.normalTitle" = "Cerrar sesión";
+
+/* Class = "UILabel"; text = "DEMO ENVIRONMENT"; ObjectID = "DGS-DY-Emf"; */
+"DGS-DY-Emf.text" = "DEMO ENVIRONMENT";
+
+/* Class = "UILabel"; text = "Juan Vasquez"; ObjectID = "KrS-MK-SMq"; */
+"KrS-MK-SMq.text" = "Juan Vasquez";
+
+/* Class = "UIButton"; normalTitle = "Historico de Pagos"; ObjectID = "Q8m-6i-IU7"; */
+"Q8m-6i-IU7.normalTitle" = "Histórico de Pagos";
+
+/* Class = "UIButton"; normalTitle = "Directorio"; ObjectID = "8tF-XY-cdz"; */
+"8tF-XY-cdz.normalTitle" = "Directorio";
+
+/* Class = "UILabel"; text = "Version -v1.1.0.12"; ObjectID = "gJ4-Ih-zRB"; */
+"gJ4-Ih-zRB.text" = "Version -v1.1.0.12";
+
+/* Class = "UILabel"; text = "BOD Banco Universal -RIF: J-30061946-0"; ObjectID = "hJQ-pi-55t"; */
+"hJQ-pi-55t.text" = "BOD Banco Universal -RIF: J-30061946-0";
+
+/* Class = "UILabel"; text = "Copyright 2016-2017 Phoenix Software 3000, C.A."; ObjectID = "p5P-p8-gWw"; */
+"p5P-p8-gWw.text" = "Copyright 2016-2017 Phoenix Software 3000, C.A.";
+
+/* Class = "UIButton"; normalTitle = "Perfil"; ObjectID = "ww8-ZQ-z33"; */
+"ww8-ZQ-z33.normalTitle" = "Perfil";
+
+/* Class = "UIButton"; normalTitle = "QR"; ObjectID = "y0Z-PI-A95"; */
+"y0Z-PI-A95.normalTitle" = "QR";

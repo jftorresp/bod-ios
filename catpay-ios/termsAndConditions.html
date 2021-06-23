@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <meta name="description" content="">
+                        <meta name="author" content="">
+                            <title>Pago Express BOD</title>
+                            <!-- Bootstrap Core CSS -->
+                            <style media="screen" type="text/css">
+                                /*!
+                                 * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
+                                 * Copyright 2013-2016 Start Bootstrap
+                                 * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+                                 */
+                            
+                            body {
+                                line-height: 1.5;
+                                font-size: 1em;
+                                color: #4d4d4d;
+                                overflow-x: hidden;
+                                font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+                            }
+                            
+                            .dark-background {
+                                background-color: #171717;
+                            }
+                            
+                            .text-muted {
+                                color: #4d4d4d;
+                            }
+                            
+                            .text-primary {
+                                color: #4d4d4d;
+                            }
+                            
+                            p {
+                                color: #4d4d4d;
+                                font-size: 1em;
+                                line-height: 1.5;
+                            }
+                            
+                            p.large {
+                                font-size: 1em;
+                            }
+                            
+                            a,
+                            a:hover,
+                            a:focus,
+                            a:active,
+                            a.active {
+                                outline: none;
+                            }
+                            
+                            a {
+                                color: #4d4d4d;
+                            }
+                            
+                            a:hover,
+                            a:focus,
+                            a:active,
+                            a.active {
+                                color: #4d4d4d;
+                            }
+                            
+                            h1,
+                            h2,
+                            h3,
+                            h4,
+                            h5,
+                            h6 {
+                                font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                            }
+                            
+                            
+                            h2,
+                            h3 {
+                                font-size: 1em;
+                            }
+                            
+                            .title {
+                                margin: 30px auto;
+                                text-align: center;
+                            }
+                            
+                            .subtitle {
+                                margin: 0px auto;
+                                text-align: center;
+                            }
+                            
+                            .img-centered {
+                                margin: 0 auto;
+                            }
+                            
+                            .bg-light-gray {
+                                background-color: #eeeeee;
+                            }
+                            
+                            .bg-darkest-gray {
+                                background-color: #222222;
+                            }
+                            
+                            .btn-primary {
+                                color: white;
+                                background-color: #181818;
+                                border-color: #181818;
+                                font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                            }
+                            
+                            .btn-primary:hover,
+                            .btn-primary:focus,
+                            .btn-primary:active,
+                            .btn-primary.active,
+                            .open .dropdown-toggle.btn-primary {
+                                color: white;
+                                background-color: #fec503;
+                                border-color: #f6bf01;
+                            }
+                            
+                            .btn-primary:active,
+                            .btn-primary.active,
+                            .open .dropdown-toggle.btn-primary {
+                                background-image: none;
+                            }
+                            
+                            .btn-primary.disabled,
+                            .btn-primary[disabled],
+                            fieldset[disabled] .btn-primary,
+                            .btn-primary.disabled:hover,
+                            .btn-primary[disabled]:hover,
+                            fieldset[disabled] .btn-primary:hover,
+                            .btn-primary.disabled:focus,
+                            .btn-primary[disabled]:focus,
+                            fieldset[disabled] .btn-primary:focus,
+                            .btn-primary.disabled:active,
+                            .btn-primary[disabled]:active,
+                            fieldset[disabled] .btn-primary:active,
+                            .btn-primary.disabled.active,
+                            .btn-primary[disabled].active,
+                            fieldset[disabled] .btn-primary.active {
+                                background-color: #181818;
+                                border-color: #181818;
+                            }
+                            
+                            .btn-primary .badge {
+                                color: #181818;
+                                background-color: white;
+                            }
+                            
+                            .justify {
+                                text-align: justify;
+                                padding: 0.5em;
+                            }
+                            
+                                </style>
+                            
+                            
+                            <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                            <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                            <!--[if lt IE 9]>
+                             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"
+                             integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY"
+                             crossorigin="anonymous"></script>
+                             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"
+                             integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo"
+                             crossorigin="anonymous"></script>
+                             <![endif]-->
+                            
+    </head>
+    
+    <body>
+        <div class="container">
+            <div class="row">
+                <h2 class='subtitle' style="margin-top: 30px;">
+                    <u>OFERTA P&Uacute;BLICA</u>
+                </h2>
+                <h2 class='subtitle'>
+                    <u>
+                        CONDICIONES GENERALES Y PARTICULARES DEL SERVICIO
+                        PAGO EXPRESS BOD DEL BANCO OCCIDENTAL DE DESCUENTO, BANCO UNIVERSAL, C.A
+                    </u>
+                </h2>
+                <p class="justify">El BANCO OCCIDENTAL DE DESCUENTO, BANCO UNIVERSAL, C.A., sociedad mercantil domiciliada en el municipio
+                aut&oacute;nomo Maracaibo del Estado Zulia, cuya &uacute;ltima modificaci&oacute;n del acta constitutiva estatutaria
+                est&aacute; inscrita en el Registro Mercantil Primero del Estado Zulia, el 4 de mayo de 2016, bajo el No. 31,
+                tomo 20-A RM1, e identificada en el Registro de Informaci&oacute;n Fiscal (RIF) bajo el No. J-30061946-0; ha decidido
+                iniciar la prestaci&oacute;n del servicio de banca m&oacute;vil denominado PAGO EXPRESS BOD el cual podr&aacute;
+                solicitar cualquier persona natural, de conformidad con las cl&aacute;usulas contenidas en este documento.
+                </p>
+                
+                <h2 class='subtitle'>
+                    <u>CAP&Iacute;TULO I<br>CONDICIONES GENERALES</u>
+                </h2>
+                <p class="justify">
+                <u>CL&Aacute;USULA PRIMERA: DEFINICIONES GENERALES:</u> Para todos los efectos de la presente Oferta P&uacute;blica y a fin de
+                lograr una correcta y exacta interpretaci&oacute;n de este documento, las siguientes palabras utilizadas en plural o
+                singular tendr&aacute;n el significado que se indica a continuaci&oacute;n, a menos que de su redacci&oacute;n se derive
+                una acepci&oacute;n diferente. El g&eacute;nero masculino, incluir&aacute;
+                tambi&eacute;n al femenino.</p>
+                <ul>
+                    <li class="justify"><b>AFILIACI&Oacute;N:</b> Es el acto que realiza el USUARIO para solicitar la prestaci&oacute;n del
+                        servicio PAGO EXPRESS BOD a trav&eacute;s de la BANCA DIGITAL BOD o cualquier otro medio que al efecto
+                        establezca el BANCO, para lo cual se aplicar&aacute;n los factores de autenticaci&oacute;n correspondientes.
+                    </li>
+                    <li class="justify"><b>BANCA DIGITAL BOD:</b> Es el sistema ofrecido por el <b>BANCO</b> por medio del uso del internet a
+                        trav&eacute;s del cual el USUARIO podr&aacute; solicitar la <b>AFILIACI&Oacute;N y DESAFILIACI&Oacute;N</b> del servicio
+                        PAGO EXPRESS BOD.
+                    </li>
+                    <li class="justify"><b>BENEFICIARIO:</b> Es la persona natural receptora de los fondos procesados a
+                        trav&eacute;s de <b>PAGO EXPRESS BOD</b>.
+                    </li>
+                    <li class="justify"><b>CENTRO DE ATENCI&Oacute;N TELEF&Oacute;NICA:</b> Se refiere a la unidad operativa del <b>BANCO</b> encargada de
+                        establecer contacto telef&oacute;nico con el <b>USUARIO</b> para prestar el soporte t&eacute;cnico necesario para
+                        garantizar el funcionamiento del servicio <b>PAGO EXPRESS BOD</b>; y a trav&eacute;s de la cual el <b>USUARIO</b>, podr&aacute;
+                        realizar las consultas o reclamos asociadas al servicio.
+                    </li>
+                    <li class="justify"><b>CONTRASE&Ntilde;A:</b> Se refiere e identifica a la combinaci&oacute;n de d&iacute;gitos
+                        alfab&eacute;ticos, num&eacute;ricos y especiales creada por el <b>USUARIO</b> y que solo &eacute;l conoce de
+                        car&aacute;cter personal e intransferible, con la cual debe ingresar para acceder al servicio
+                        <b>PAGO EXPRESS BOD</b>.
+                    </li>
+                    <li class="justify"><b>DESAFILIACI&Oacute;N:</b> Es el acto que realiza el <b>USUARIO</b> para solicitar la terminaci&oacute;n
+                        del servicio <b>PAGO EXPRESS BOD</b>, a trav&eacute;s de la <b>BANCA DIGITAL BOD</b>, para lo cual se aplicar&aacute;n los factores
+                        de autenticaci&oacute;n correspondientes.
+                    </li>
+                    <li class="justify"><b>HISTORIAL DE PAGO:</b> Se refiere al proceso mediante el cual el <b>USUARIO</b> realiza la consulta
+                        de los pagos realizados a trav&eacute;s del servicio <b>PAGO EXPRESS BOD</b>.
+                    </li>
+                    <li class="justify"><b>PAGO EXPRESS BOD:</b> se refiere a la aplicaci&oacute;n m&oacute;vil (app) desarrollada por
+                        <b>EL BANCO</b> para ser desplegada en tel&eacute;fonos inteligentes o cualquier otro dispositivo tecnol&oacute;gico que
+                        posea sistema operativo <b>Android (4.1 o superior) o iOS (9.0 o superior)</b>, que permitir&aacute; al <b>USUARIO</b>
+                        realizar transferencias de fondos a personas naturales, utilizando el n&uacute;mero de tel&eacute;fono m&oacute;vil
+                        como el medio de movilizaci&oacute;n.
+                    </li>
+                    <li class="justify"><b>USUARIO:</b> Es la persona natural que solicita la <b>AFILIACI&Oacute;N</b> al
+                        servicio <b>PAGO EXPRESS BOD</b> la cual tendr&aacute; la administraci&oacute;n total de la cuenta.
+                    </li>
+                </ul>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA SEGUNDA: OBJETO DEL SERVICIO:</u></b> Mediante el servicio <b>PAGO EXPRESS BOD</b> el
+                <b>USUARIO</b> podr&aacute; realizar transferencias de fondos a personas naturales, a trav&eacute;s de
+                una red de servicio interbancario, utilizando el n&uacute;mero de tel&eacute;fono m&oacute;vil como el
+                medio para movilizar fondos.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA TERCERA: DEL USO DEL APLICATIVO:</u></b> La aplicaci&oacute;n m&oacute;vil (app) <b>PAGO EXPRESS BOD</b>
+                podr&aacute; ser descargada por el USUARIO para su uso, de acuerdo a los t&eacute;rminos y condiciones
+                expresados en la presente Oferta P&uacute;blica. En tal raz&oacute;n, el uso que har&aacute; el <b>USUARIO</b> de esta app
+                estar&aacute; circunscrito exclusivamente al funcionamiento del presente servicio. La referida aplicaci&oacute;n
+                m&oacute;vil (app) con todas sus funcionalidades es propiedad del Banco.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA CUARTA: DEL USO DEL APLICATIVO Y DE LA CONFIDENCIALIDAD:</u></b>
+                EL USUARIO ES RESPONSABLE POR EL USO DE LA CONTRASE&Ntilde;A LA CUAL ES PERSONAL E INTRANSFERIBLE, POR LO CUAL
+                EL USUARIO NO PODR&Aacute; SUMINISTRAR A TERCEROS ESTA INFORMACI&Oacute;N Y TENDR&Aacute; LA DEBIDA DILIGENCIA PARA
+                EVITAR QUE TERCEROS HAGAN USO DE ESTA. ASIMISMO, EL BANCO SE OBLIGA A REALIZAR LAS ACTUALIZACIONES TECNOL&Oacute;GICAS
+                NECESARIAS PARA CONTRARRESTAR POSIBLES AMENAZAS EN EL USO DEL APLICATIVO Y GARANTIZAR LA PROTECCI&Oacute;N DEL
+                SERVICIO CONTRA EL ACCESO NO AUTORIZADO POR TERCEROS. EN CONSECUENCIA, SE OBLIGA A DAR CUMPLIMIENTO A LOS PROCEDIMIENTOS
+                ID&Oacute;NEOS DE PROTECCI&Oacute;N DE DATOS Y ADMINISTRACI&Oacute;N DE EQUIPOS REMOTOS CONFORME A LO PREVISTO EN LA
+                NORMATIVA VIGENTE.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA QUINTA: LA DURACI&Oacute;N DEL SERVICIO:</u></b> LA DURACI&Oacute;N DEL SERVICIO PAGO EXPRESS BOD ES A
+                TIEMPO INDETERMINADO Y SE INICIAR&Aacute; CON LA ACEPTACI&Oacute;N ELECTR&Oacute;NICA DE ESTE DOCUMENTO LO QUE SE
+                ENTENDER&Aacute; COMO LA CONFIRMACI&Oacute;N Y AUTORIZACI&Oacute;N PARA UTILIZAR LOS SERVICIOS OFRECIDOS POR EL
+                BANCO A TRAV&Eacute;S DE PAGO EXPRESS BOD; EN CONSECUENCIA, SU USO SE REGIR&Aacute; BAJO LOS T&Eacute;RMINOS,
+                CONDICIONES Y MODALIDADES PREVISTAS EN ESTA OFERTA P&Uacute;BLICA.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA SEXTA: TERMINACI&Oacute;N DEL SERVICIO:</u></b> ESTE CONTRATO PODR&Aacute; SER TERMINADO POR LA
+                VOLUNTAD UNILATERAL DE CUALQUIERA DE LAS PARTES EN CUALQUIER MOMENTO, ES DECIR, DEL USUARIO O DEL BANCO. EL USUARIO
+                PODR&Aacute; SOLICITAR LA DESAFILIACI&Oacute;N DEL SERVICIO EN CUALQUIER MOMENTO QUE LO REQUIERA. EL BANCO
+                PODR&Aacute; SUSPENDER DE INMEDIATO EL SERVICIO OBJETO DE ESTA OFERTA Y EXIGIR DEL USUARIO EL PAGO DE CUALQUIER
+                OBLIGACI&Oacute;N PENDIENTE A SU CARGO POR LA PRESTACI&Oacute;N DE DICHO SERVICIO EN EL CASO DE QUE EL USUARIO INCUMPLA
+                LAS OBLIGACIONES ESTABLECIDAS EN EL PRESENTE CONTRATO.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA S&Eacute;PTIMA: MODIFICACIONES DE T&Eacute;RMINOS Y CONDICIONES:</u></b> EL BANCO PODR&Aacute;
+                REALIZAR LAS ADECUACIONES Y ACTUALIZACIONES NECESARIAS PARA EL MEJOR FUNCIONAMIENTO DEL SERVICIO PAGO EXPRESS BOD.
+                EN TAL SENTIDO, PODR&Aacute; MODIFICAR TOTAL O PARCIALMENTE EN CUALQUIER MOMENTO LOS T&Eacute;RMINOS CONTENIDOS
+                EN LA PRESENTE OFERTA P&Uacute;BLICA LOS CUALES SE INFORMAR&Aacute;N A LOS USUARIOS AFILIADOS.
+                </p>
+                <h2 class='subtitle'>
+                    <u>CAP&Iacute;TULO II<br>OBLIGACIONES DE LAS PARTES</u>
+                </h2>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA OCTAVA: OBLIGACIONES DEL USUARIO:</u></b> EN LA PRESTACI&Oacute;N DEL SERVICIO PAGO EXPRESS BOD
+                EL USUARIO SE OBLIGA A:
+                </p>
+                <ul>
+                    <li class="justify">REALIZAR LAS OPERACIONES CONFORME A LAS DISPOSICIONES PREVISTAS EN LA PRESENTE OFERTA
+                        P&Uacute;BLICA. EN CASO DE CUALQUIER OPERACI&Oacute;N NO RECONOCIDA POR EL USUARIO, ESTE DEBER&Aacute;
+                        FORMULAR EL RECLAMO AL BANCO PARA QUE REALICE LAS INVESTIGACIONES A QUE HAYA LUGAR Y DETERMINE LA PROCEDENCIA O
+                        IMPROCEDENCIA DEL RECLAMO, EN ESTE &Uacute;LTIMO CASO EL BANCO DEBER&Aacute; ARGUMENTAR Y PROBAR LAS CAUSAS QUE
+                        DAN ORIGEN A LA IMPROCEDENCIA DEL RECLAMO.
+                    </li>
+                    <li class="justify">EXONERAR AL BANCO DE CUALQUIER RESPONSABILIDAD DERIVADA DEL ERROR
+                        EN LA UTILIZACI&Oacute;N DEL SERVICIO PAGO EXPRESS BOD ORIGINADO POR EL MAL USO O DESEMPE&Ntilde;O DEL
+                        DISPOSITIVO TECNOL&Oacute;GICO DESDE EL CUAL SE EJECUTE ESTE SERVICIO.
+                    </li>
+                    <li class="justify">MANTENER ACTUALIZADOS EN EL BANCO LOS DATOS NECESARIOS PARA LA PRESTACI&Oacute;N DEL
+                        SERVICIO PAGO EXPRESS BOD EN ESPECIAL SU N&Uacute;MERO DE TEL&Eacute;FONO M&Oacute;VIL Y CORREO
+                        ELECTR&Oacute;NICO.
+                    </li>
+                    <li class="justify">POSEER ACTIVO EL SERVICIO DE TELEFON&Iacute;A CELULAR EN EL N&Uacute;MERO DE TEL&Eacute;FONO
+                        QUE TENGA REGISTRADO EN EL SISTEMA DEL BANCO Y LA TARJETA DE D&Eacute;BITO ASOCIADA A LA CUENTA,
+                        EN EL MOMENTO DE ACEPTACI&Oacute;N DE LA PRESENTE OFERTA P&Uacute;BLICA.
+                    </li>
+                </ul>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA NOVENA: OBLIGACIONES DEL BANCO:</u></b> En la prestaci&oacute;n del servicio
+                <b>PAGO EXPRESS BOD</b> el <b>BANCO</b> se obliga a:
+                </p>
+                <ul>
+                    <li class="justify">Procesar las operaciones efectuadas a trav&eacute;s de <b>PAGO EXPRESS BOD</b>
+                        el mismo d&iacute;a en el cual se realicen por el <b>USUARIO</b>.
+                    </li>
+                    <li class="justify">Mantener actualizada toda la informaci&oacute;n que suministre al
+                        <b>USUARIO</b> a trav&eacute;s del servicio <b>PAGO EXPRESS BOD</b>. En caso de consulta del <b>HISTORIAL DE PAGO</b> el
+                        proceso ser&aacute; el resultado de las ultimas diez operaciones realizadas hasta el momento de la consulta.
+                    </li>
+                    <li class="justify">Actualizar la aplicaci&oacute;n <b>PAGO EXPRESS BOD</b>. La obligaci&oacute;n aqu&iacute;
+                        prevista deber&aacute; cumplirla el <b>BANCO</b> en la oportunidad que considere pertinente conforme a las normativas
+                        publicadas por los entes reguladores y las normativas internas.
+                    </li>
+                </ul>
+                
+                <h2 class='subtitle'>
+                    <u>CAP&Iacute;TULO III<br>CONDICIONES PARTICULARES DE USO</u>
+                </h2>
+                <p class="justify">En este cap&iacute;tulo se establecen las condiciones que rigen el servicio de banca m&oacute;vil
+                denominado <b>PAGO EXPRESS BOD</b> que presta el <b>BANCO</b>, en l&iacute;nea y tiempo real, mediante la
+                aplicaci&oacute;n desarrollada por este y descargada por el <b>USUARIO</b> en su dispositivo tecnol&oacute;gico,
+                previo el cumplimiento de los requisitos y normativas de seguridad establecidas por el <b>BANCO</b>. Este servicio le
+                permitir&aacute; al <b>USUARIO</b> la transferencia de fondos entre cuentas del mismo banco y hacia otros bancos, o
+                cualquier otra operaci&oacute;n que eventualmente incorpore el <b>BANCO</b> a este canal electr&oacute;nico de
+                operaciones bancarias.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA D&Eacute;CIMA: AFILIACI&Oacute;N AL SERVICIO:</u></b> <b>El USUARIO</b> realizar&aacute; el proceso de
+                afiliaci&oacute;n a trav&eacute;s del sistema establecido por el <b>BANCO</b>, para lo cual el sistema validar&aacute;
+                que el <b>USUARIO</b> posea un n&uacute;mero telef&oacute;nico m&oacute;vil y un correo electr&oacute;nico. <b>EL BANCO</b>
+                se reserva la posibilidad de solicitar cualquier validaci&oacute;n adicional para garantizar la seguridad del servicio.
+                </p>
+                <p class="justify"><b>PAR&Aacute;GRAFO PRIMERO:</b> <b>El USUARIO</b> en el proceso de <b>AFILIACI&Oacute;N</b> deber&aacute;
+                seleccionar la cuenta asociada al servicio para lo cual se aplicar&aacute;n los factores de autenticaci&oacute;n
+                correspondientes as&iacute; como cualquier otro mecanismo o requisito de seguridad que llegare a
+                implementar el <b>BANCO</b>.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA UND&Eacute;CIMA: DESAFILIACI&Oacute;N:</u></b> <b>El USUARIO</b> podr&aacute; desafiliarse del
+                servicio a trav&eacute;s del sistema establecido por el <b>BANCO</b> seg&uacute;n las opciones y procedimientos que a tales
+                fines establezca el <b>BANCO</b>.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA DUOD&Eacute;CIMA: MODIFICACI&Oacute;NES:</u></b> <b>El USUARIO</b> podr&aacute; modificar a
+                trav&eacute;s de la <b>BANCA DIGITAL BOD</b> o a trav&eacute;s de cualquier otro medio que al efecto establezca el <b>BANCO</b>,
+                la cuenta asociada al servicio, los montos m&aacute;ximos por operaci&oacute;n, el n&uacute;mero de transacciones
+                diarias, seg&uacute;n las opciones y procedimientos informadas por el <b>BANCO</b>.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA DECIMO TERCERA: REGISTRO AL SERVICIO:</u></b> Para acceder y usar el servicio de <b>PAGO EXPRESS BOD</b>
+                <b>El USUARIO</b> est&aacute; en la obligaci&oacute;n de realizar el registro en la aplicaci&oacute;n m&oacute;vil (app),
+                que deber&aacute; descargar en su dispositivo tecnol&oacute;gico.
+                </p>
+                <p class="justify">
+                <b><u>PARAGRAFO PRIMERO:</u></b> <b>El USUARIO</b> para el registro en la aplicaci&oacute;n deber&aacute; indicar:
+                nombre y apellido, n&uacute;mero de c&eacute;dula de identidad y n&uacute;mero de tel&eacute;fono m&oacute;vil,
+                los cuales deber&aacute;n coincidir con los datos registrados por el <b>USUARIO</b> en el sistema del <b>BANCO</b>. De
+                igual manera, el <b>USUARIO</b> est&aacute; en la obligaci&oacute;n de realizar la configuraci&oacute;n de la
+                <b>CONTRASE&Ntilde;A</b> y dem&aacute;s instrumentos de seguridad exigidos por el <b>BANCO</b>, seg&uacute;n las
+                condiciones determinadas por la referida instituci&oacute;n y por las disposiciones legales vigentes.
+                Los datos indicados conformaran el perfil del <b>USUARIO</b> en la aplicaci&oacute;n m&oacute;vil.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA DECIMO CUARTA: GESTI&Oacute;N DE CONTRASE&Ntilde;A COMPROMETIDA:</u></b>
+                EN CASO DE QUE LA CONTRASE&Ntilde;A DEL USUARIO LLEGARE DE CUALQUIER FORMA A CONOCIMIENTO DE TERCERAS PERSONAS NO
+                AUTORIZADAS POR EL USUARIO O EL BANCO, EL USUARIO DEBER&Aacute; NOTIFICAR AL BANCO DENTRO DE LAS 24 HORAS SIGUIENTES
+                CONTADAS A PARTIR DEL CONOCIMIENTO DE LA SITUACI&Oacute;N. EL USUARIO PODR&Aacute; REALIZAR LA NOTIFICACI&Oacute;N AL
+                BANCO A TRAV&Eacute;S DE SU CENTRO DE ATENCI&Oacute;N TELEF&Oacute;NICA O DE CUALQUIER OTRO MEDIO QUE ESTE DISPONGA
+                PARA TAL FIN. NO OBSTANTE, EN CASO QUE EL BANCO TENGA CONOCIMIENTO POR CUALQUIER OTRO MEDIO DE OPERACIONES
+                REALIZADAS POR TERCERAS PERSONAS NO AUTORIZADAS PODR&Aacute; INICIAR DE OFICIO LA INVESTIGACI&Oacute;N Y TOMAR
+                LAS MEDIDAS QUE CONSIDERE NECESARIAS PARA LA PROTECCI&Oacute;N DEL USUARIO.
+                </p>
+                <p class="justify">
+                <b><u>PAR&Aacute;GRAFO PRIMERO:</u></b> EN CASO DE OPERACIONES REALIZADAS POR TERCERAS PERSONAS NO AUTORIZADAS
+                Y OBJETADAS POR EL USUARIO, EL BANCO REALIZAR&Aacute; LAS INVESTIGACIONES DE RIGOR PARA DETERMINAR LA PROCEDENCIA O
+                IMPROCEDENCIA DEL RECLAMO EN ATENCI&Oacute;N A ESTAS OPERACIONES. EN LA REFERIDA INVESTIGACI&Oacute;N, EL
+                BANCO REVISAR&Aacute; EL CUMPLIMIENTO O INCUMPLIMIENTO DE LAS OBLIGACIONES ESTABLECIDAS PARA AMBOS (USUARIO Y BANCO)
+                EN LA PRESENTE OFERTA P&Uacute;BLICA, AS&Iacute; COMO LA NORMAS VIGENTES QUE REGULAN LA MATERIA. EN CASO DE
+                IMPROCEDENCIA DEL RECLAMO EL BANCO INFORMAR&Aacute; Y PROBAR&Aacute; LAS RAZONES QUE LA FUNDAMENTAN Y EN CASO
+                DE PROCEDENCIA REALIZAR&Aacute; A FAVOR DEL USUARIO LOS AJUSTES O REINTEGROS A QUE HAYA LUGAR.
+                </p>
+                <p class="justify">
+                <b><u>PAR&Aacute;GRAFO SEGUNDO:</u></b> EL USUARIO AUTORIZA AL BANCO Y LE OTORGA AMPLIAS FACULTADES, PARA QUE
+                INVESTIGUE TODO LO RELATIVO A LOS USOS INDEBIDOS O FRAUDULENTOS DEL SERVICIO PAGO EXPRESS BOD Y SE COMPROMETE A
+                PRESTAR TANTO AL BANCO COMO A LAS AUTORIDADES POLICIALES Y JUDICIALES COMPETENTES TODA LA COLABORACI&Oacute;N
+                QUE REQUIERAN A LOS FINES DE ESCLARECER LOS HECHOS DENTRO DE LOS L&Iacute;MITES ESTABLECIDOS EN LA NORMATIVA VIGENTE.
+                </p>
+                <h2 class='subtitle'>
+                    <u>CAP&Iacute;TULO IV<br>OPERACIONES A TRAV&Eacute;S DE PAGO EXPRESS BOD.</u>
+                </h2>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA DECIMO QUINTA: REGISTRO DE BENEFICIARIOS:</u></b> <b>El USUARIO</b> contar&aacute; con una
+                funcionalidad que le permitir&aacute; registrar los <b>BENEFICIARIOS</b> de las transacciones a realizar a trav&eacute;s
+                de <b>PAGO EXPRESS BOD</b> as&iacute; como los elementos necesarios para su configuraci&oacute;n.
+                Para llevar a cabo el registro, <b>EL BENEFICIARIO</b> deber&aacute; estar afiliado al servicio <b>PAGO EXPRESS BOD</b>.
+                </p>
+                <p class="justify">
+                <b>PAR&Aacute;GRAFO PRIMERO:</b> <b>El USUARIO</b> para el registro deber&aacute; indicar los siguientes datos del
+                <b>BENEFICIARIO</b>: n&uacute;mero de tel&eacute;fono m&oacute;vil, n&uacute;mero de c&eacute;dula de identidad y
+                seleccionar la instituci&oacute;n financiera del beneficiario.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA D&Eacute;CIMO SEXTA: TRANSFERENCIAS:</u></b> <b>El USUARIO</b> a trav&eacute;s
+                de <b>PAGO EXPRESS BOD</b>, podr&aacute; realizar d&eacute;bitos de la cuenta asociada al servicio y efectuar los 
+                cr&eacute;ditos a otras cuentas de otro titular; entre cuentas del mismo banco y hacia otro banco, utilizando 
+                el n&uacute;mero de tel&eacute;fono m&oacute;vil como el medio para movilizar fondos.
+                </p>
+                <p class="justify">
+                <b><u>PAR&Aacute;GRAFO PRIMERO</u></b> Para realizar la operaci&oacute;n el <b>USUARIO</b> deber&aacute; indicar el 
+                n&uacute;mero de tel&eacute;fono m&oacute;vil del beneficiario, el monto y descripci&oacute;n de la transferencia.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA D&Eacute;CIMO S&Eacute;PTIMA: TARIFAS Y COMISIONES:</u></b> Las tarifas y comisiones derivadas en 
+                atenci&oacute;n a la prestaci&oacute;n servicio <b>PAGO EXPRESS BOD</b> se regir&aacute;n por lo dispuesto por el 
+                Banco Central de Venezuela en el aviso oficial o resoluci&oacute;n que sea publicada para tal fin.
+                </p>
+                <h2 class='subtitle'>
+                    <u>CAP&Iacute;TULO V<br>PREVENCI&Oacute;N Y CONTROL DE LEGITIMACI&Oacute;N DE CAPITALES Y FINANCIAMIENTO AL TERRORISMO</u>
+                </h2>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA D&Eacute;CIMO OCTAVA: DE LA PROCEDENCIA LICITA DEL DINERO:</u></b> <b>El USUARIO</b> declara 
+                expresamente bajo fe de juramento que los fondos utilizados en sus operaciones bancarias provienen de fuentes 
+                leg&iacute;timas y que ser&aacute;n destinados para fines l&iacute;citos, en estricto apego y cumplimento con las 
+                normas establecidas en el ordenamiento jur&iacute;dico, especialmente la normativa vigente de car&aacute;cter legal o 
+                sub legal que regule lo referente a la Legitimaci&oacute;n de Capitales y el Financiamiento al Terrorismo.
+                </p>
+                <h2 class='subtitle'>
+                    <u>CAP&Iacute;TULO VI<br>DOMICILIO LEGAL Y RECLAMOS</u>
+                </h2>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA D&Eacute;CIMO NOVENA: LEGISLACI&Oacute;N Y TRIBUNALES:</u></b> A la relaci&oacute;n contractual 
+                que vincula a las partes, por el servicio objeto de esta Oferta P&uacute;blica ofrecido por el <b>BANCO</b> al <b>USUARIO</b>, 
+                le son aplicables &mdash;adem&aacute;s de las cl&aacute;usulas de esta oferta&mdash; las leyes y la normativa 
+                prudencial dictada por los organismos competentes de la de la Rep&uacute;blica Bolivariana de Venezuela. 
+                Para todos los efectos de este contrato, sus derivados y consecuencias, se elige como domicilio especial la ciudad 
+                que sirve de asiento principal de los negocios e intereses del <b>USUARIO</b> o la localidad de la aceptaci&oacute;n 
+                electr&oacute;nica de esta Oferta P&uacute;blica, a cuyos tribunales las partes declaran someterse.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA VIG&Eacute;SIMA: PROCEDIMIENTOS EN CASOS DE RECLAMOS O SOLICITUDES RELACIONADAS CON EL 
+                    SERVICIO PAGO EXPRESS BOD.:</u></b> En caso de reclamos, solicitudes y quejas relacionadas con el servicio objeto 
+                de esta Oferta P&uacute;blica, el <b>USUARIO</b> deber&aacute; interponerlos a trav&eacute;s del 
+                <b>CENTRO DE ATENCI&Oacute;N TELEF&Oacute;NICA del BANCO</b> en las oficinas de este &uacute;ltimo o por 
+                cualquier otro medio f&iacute;sico y electr&oacute;nico que disponga la instituci&oacute;n bancaria. La atenci&oacute;n 
+                y resoluci&oacute;n del reclamo, solicitud o queja se har&aacute; de conformidad con las estipulaciones 
+                legales vigentes para el momento de su interposici&oacute;n, as&iacute; como los procedimientos 
+                determinados por el <b>BANCO</b>.
+                </p>
+                <h2 class='subtitle'>
+                    <u>CAP&Iacute;TULO VII<br>ACEPTACI&Oacute;N Y CONFORMIDAD</u>
+                </h2>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA VIG&Eacute;SIMA PRIMERA: ACEPTACI&Oacute;N:</u></b> <b>LA OFERTA</b> 
+                P&Uacute;BLICA DEL SERVICIO <b>PAGO EXPRESS BOD</b> SE ENCUENTRA A DISPOSICI&Oacute;N DEL USUARIO EN CARACTERES 
+                LEGIBLES EN LA P&Aacute;GINA WEB DE EL BANCO WWW.BOD.COM.VE, PARA SU LECTURA PREVIA A LA AFILIACI&Oacute;N DEL 
+                SERVICIO. COMO CONSECUENCIA DE LO ANTERIOR, EL USUARIO ACEPTA DE MANERA EXPRESA QUE LA PRESTACI&Oacute;N DEL 
+                SERVICIO SE INICIAR&Aacute; CON LA ACEPTACI&Oacute;N ELECTR&Oacute;NICA DE ESTE DOCUMENTO LO QUE SE ENTENDER&Aacute; 
+                COMO LA CONFIRMACI&Oacute;N Y AUTORIZACI&Oacute;N PARA UTILIZAR LOS SERVICIOS OFRECIDOS POR EL BANCO A TRAV&Eacute;S 
+                DE ESTE CANAL ELECTR&Oacute;NICO.
+                </p>
+                <p class="justify">
+                <b><u>CL&Aacute;USULA VIG&Eacute;SIMA SEGUNDA: CONFORMIDAD:</u></b> EL USUARIO DECLARA QUE ANTES DE LA 
+                ACEPTACI&Oacute;N PARA EL USO DE LOS SERVICIOS DE BANCA M&Oacute;VIL <b>PAGO EXPRESS BOD</b> HA TENIDO A LA VISTA ESTE 
+                DOCUMENTO, QUE LO HA LE&Iacute;DO Y COMPRENDIDO &Iacute;NTEGRAMENTE A CUYOS EFECTOS SE DEJA CONSTANCIA DE SU 
+                LECTURA EN FORMA ELECTR&Oacute;NICA. EN CONSECUENCIA DE LO ANTERIOR, EL USUARIO DECLARA SU CONFORMIDAD ACEPTACI&Oacute;N Y 
+                CONOCIMIENTO DE LOS T&Eacute;RMINOS Y CONDICIONES DE ESTA <b>OFERTA P&Uacute;BLICA</b> PARA EL USO DEL 
+                SERVICIO <b>PAGO EXPRESS BOD</b>.
+                </p>
+            </div>
+        </div>
+    </body>
+    
+</html>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jY8-Xo-Awp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Detail Contact View Controller-->
+        <scene sceneID="cf2-Zb-62J">
+            <objects>
+                <viewController storyboardIdentifier="DetailContact" id="jY8-Xo-Awp" customClass="DetailContactViewController" customModule="Pago_Express_BOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eQX-5B-htw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" restorationIdentifier="Directory" translatesAutoresizingMaskIntoConstraints="NO" id="7YM-kF-Guu" userLabel="BannerView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directorio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtK-Qa-rE5" customClass="CustomLabel" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="171.5" y="61" width="71.5" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="Yc1-4G-s5I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5PF-CK-j7o" userLabel="ButtonRealizarPago">
+                                        <rect key="frame" x="177" y="8" width="60" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="Kzy-6V-7jS"/>
+                                            <constraint firstAttribute="height" constant="41" id="gT3-Kk-Hqi"/>
+                                        </constraints>
+                                        <state key="normal" image="imgDirectory"/>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="Uyv-sZ-9wl"/>
+                                <color key="backgroundColor" name="PrimaryColor"/>
+                                <constraints>
+                                    <constraint firstItem="5PF-CK-j7o" firstAttribute="centerX" secondItem="7YM-kF-Guu" secondAttribute="centerX" id="9vm-ka-6U5"/>
+                                    <constraint firstItem="5PF-CK-j7o" firstAttribute="top" secondItem="7YM-kF-Guu" secondAttribute="top" constant="8" id="dKK-sq-Obn"/>
+                                    <constraint firstItem="jtK-Qa-rE5" firstAttribute="top" secondItem="5PF-CK-j7o" secondAttribute="bottom" constant="12" id="jJK-nB-Zlc"/>
+                                    <constraint firstItem="jtK-Qa-rE5" firstAttribute="centerX" secondItem="7YM-kF-Guu" secondAttribute="centerX" id="oLG-DW-wwy"/>
+                                    <constraint firstAttribute="height" constant="90" id="riB-T5-8VD"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2y3-Kn-VbY">
+                                <rect key="frame" x="70" y="146" width="324" height="21"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8Q-SV-zR9">
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="21"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                        <state key="normal" title=" Eliminar Contacto" image="imgCancel">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small" weight="ultraLight"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="eliminarContacto:" destination="jY8-Xo-Awp" eventType="touchUpInside" id="UM6-dk-srZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4F-AA-783">
+                                        <rect key="frame" x="166" y="0.0" width="158" height="21"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                        <color key="tintColor" name="PrimaryColor"/>
+                                        <state key="normal" title=" Agregar Teléfono" image="plus" catalog="system">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="agregarTelefono:" destination="jY8-Xo-Awp" eventType="touchUpInside" id="JF1-y0-UHB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iao-65-BwV">
+                                <rect key="frame" x="20" y="189" width="374" height="43"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VF6-4j-2I3">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="43"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carlos Marín" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdo-ab-IZX">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="19"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V-12345678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0UN-OT-lS5">
+                                                <rect key="frame" x="0.0" y="24" width="187" height="19"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hsm-ya-pp7">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="43"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nd-HZ-ZKJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="164" height="43"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                <state key="normal" title="Modificar">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="modificarNombreCedula:" destination="jY8-Xo-Awp" eventType="touchUpInside" id="mn8-Nc-QQw"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VdD-sG-UdB">
+                                                <rect key="frame" x="167" y="0.5" width="20" height="42"/>
+                                                <color key="tintColor" name="PrimaryColor"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nvs-1n-eFr" userLabel="Line2">
+                                <rect key="frame" x="20" y="252" width="374" height="0.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="d2M-yO-M2a"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihR-Mz-QtV">
+                                <rect key="frame" x="20" y="843" width="374" height="19"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                <color key="tintColor" name="PrimaryColor"/>
+                                <state key="normal" title=" Ir al Directorio" image="arrow.left.circle.fill" catalog="system">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="irDirectorio:" destination="jY8-Xo-Awp" eventType="touchUpInside" id="e8j-cI-qcy"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Osf-ER-QhI">
+                                <rect key="frame" x="0.0" y="267.5" width="414" height="560.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="contactPhoneCell" textLabel="Da2-Za-bb0" style="IBUITableViewCellStyleDefault" id="ycf-F1-mSa" customClass="contactPhonesTableViewCell" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ycf-F1-mSa" id="SDg-sN-1Ma">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="0123456789" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Da2-Za-bb0" userLabel="Telefono">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdO-TU-JUR" userLabel="Edit Button">
+                                                    <rect key="frame" x="371" y="9" width="25" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" name="PrimaryColor"/>
+                                                    <state key="normal">
+                                                        <imageReference key="image" image="pencil.circle" catalog="system" symbolScale="large"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="editPhonePressed:" destination="ycf-F1-mSa" eventType="touchUpInside" id="Pxc-3Z-DCO"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSr-uw-ajh" userLabel="Delete Button">
+                                                    <rect key="frame" x="343" y="10" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" name="PrimaryColor"/>
+                                                    <state key="normal" image="imgCancel">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="deletePhonePressed:" destination="ycf-F1-mSa" eventType="touchUpInside" id="nR7-EJ-4y9"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="deletePhoneBtn" destination="aSr-uw-ajh" id="7eV-e2-KfI"/>
+                                            <outlet property="editPhoneBtn" destination="JdO-TU-JUR" id="IDh-ZE-TYs"/>
+                                            <outlet property="phoneNumberLabel" destination="Da2-Za-bb0" id="Ixy-kw-Glz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IGz-Yb-k0Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2y3-Kn-VbY" firstAttribute="top" secondItem="7YM-kF-Guu" secondAttribute="bottom" constant="12" id="2Ym-VS-tdC"/>
+                            <constraint firstItem="iao-65-BwV" firstAttribute="leading" secondItem="IGz-Yb-k0Q" secondAttribute="leading" constant="20" id="2y0-RZ-ETw"/>
+                            <constraint firstItem="Nvs-1n-eFr" firstAttribute="leading" secondItem="eQX-5B-htw" secondAttribute="leadingMargin" id="3RU-Sr-Cb4"/>
+                            <constraint firstItem="iao-65-BwV" firstAttribute="top" secondItem="2y3-Kn-VbY" secondAttribute="bottom" constant="22" id="3po-vX-Lcm"/>
+                            <constraint firstItem="Osf-ER-QhI" firstAttribute="top" secondItem="Nvs-1n-eFr" secondAttribute="bottom" constant="15" id="Aqd-pN-h0E"/>
+                            <constraint firstItem="Nvs-1n-eFr" firstAttribute="top" secondItem="iao-65-BwV" secondAttribute="bottom" constant="20" id="RVm-kf-QSS"/>
+                            <constraint firstItem="ihR-Mz-QtV" firstAttribute="top" secondItem="Osf-ER-QhI" secondAttribute="bottom" constant="15" id="Rln-x0-w06"/>
+                            <constraint firstItem="ihR-Mz-QtV" firstAttribute="bottom" secondItem="IGz-Yb-k0Q" secondAttribute="bottom" id="Vm2-Fw-dxN"/>
+                            <constraint firstItem="7YM-kF-Guu" firstAttribute="leading" secondItem="IGz-Yb-k0Q" secondAttribute="leading" id="a74-5v-qfc"/>
+                            <constraint firstItem="Nvs-1n-eFr" firstAttribute="trailing" secondItem="eQX-5B-htw" secondAttribute="trailingMargin" id="blJ-G8-jaH"/>
+                            <constraint firstItem="2y3-Kn-VbY" firstAttribute="leading" secondItem="IGz-Yb-k0Q" secondAttribute="leading" constant="70" id="boy-Ia-p97"/>
+                            <constraint firstItem="Osf-ER-QhI" firstAttribute="leading" secondItem="IGz-Yb-k0Q" secondAttribute="leading" id="cxL-Vd-HqO"/>
+                            <constraint firstItem="ihR-Mz-QtV" firstAttribute="leading" secondItem="IGz-Yb-k0Q" secondAttribute="leading" constant="20" id="hWp-Mg-OYJ"/>
+                            <constraint firstItem="IGz-Yb-k0Q" firstAttribute="trailing" secondItem="iao-65-BwV" secondAttribute="trailing" constant="20" id="k8D-rx-3et"/>
+                            <constraint firstItem="IGz-Yb-k0Q" firstAttribute="trailing" secondItem="2y3-Kn-VbY" secondAttribute="trailing" constant="20" id="t9Z-ve-zGD"/>
+                            <constraint firstItem="IGz-Yb-k0Q" firstAttribute="trailing" secondItem="Osf-ER-QhI" secondAttribute="trailing" id="tGy-lT-cYX"/>
+                            <constraint firstItem="7YM-kF-Guu" firstAttribute="trailing" secondItem="IGz-Yb-k0Q" secondAttribute="trailing" id="ufI-Ph-Gbb"/>
+                            <constraint firstItem="IGz-Yb-k0Q" firstAttribute="trailing" secondItem="ihR-Mz-QtV" secondAttribute="trailing" constant="20" id="xCk-JE-9RX"/>
+                            <constraint firstItem="7YM-kF-Guu" firstAttribute="top" secondItem="IGz-Yb-k0Q" secondAttribute="top" id="zwa-Qv-HBR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="agregarBtn" destination="l4F-AA-783" id="JZy-gg-pIl"/>
+                        <outlet property="cedulaLabel" destination="0UN-OT-lS5" id="3cD-vN-ndf"/>
+                        <outlet property="eliminarBtn" destination="L8Q-SV-zR9" id="BfW-vE-iUS"/>
+                        <outlet property="nombreLabel" destination="Pdo-ab-IZX" id="1l8-1k-WHP"/>
+                        <outlet property="phoneTableview" destination="Osf-ER-QhI" id="0DX-x1-jwo"/>
+                        <outlet property="viewHeader" destination="7YM-kF-Guu" id="FYK-oj-iMl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ClW-3N-WuC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-504.34782608695656" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="imgCancel" width="21.5" height="21"/>
+        <image name="imgDirectory" width="61" height="42.5"/>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.40000000596046448" green="0.70999997854232788" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

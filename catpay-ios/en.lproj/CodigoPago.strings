@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Mi Cuenta"; ObjectID = "W22-me-qsm"; */
+"W22-me-qsm.text" = "My Account";
+
+/* Class = "UILabel"; text = "Telefono"; ObjectID = "gPj-AZ-Wqi"; */
+"gPj-AZ-Wqi.text" = "PHONE";
+
+/* Class = "UILabel"; text = "04122276107"; ObjectID = "xXU-IR-D0j"; */
+"xXU-IR-D0j.text" = "04122276107";
+
+/* Class = "UILabel"; text = "Escanea el codigo con tu telefono para almacenar de foma automatica los datos del beneficiario del pago "; ObjectID = "zML-7t-vSH"; */
+"zML-7t-vSH.text" = "Scan this code with your phone to save the beneficiary data automatically";

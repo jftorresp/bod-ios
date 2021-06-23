@@ -1,0 +1,19 @@
+
+/* Class = "UILabel"; text = "Iniciar Sesion"; ObjectID = "86x-fh-WwX"; */
+"86x-fh-WwX.text" = "Login";
+
+/* Class = "UITextField"; placeholder = "contrasena"; ObjectID = "9eR-sV-vul"; */
+"9eR-sV-vul.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Olvidaste tu contrasena?"; ObjectID = "DAS-4a-avZ"; */
+"DAS-4a-avZ.normalTitle" = "Forgot your password?";
+
+/* Class = "UIButton"; normalTitle = "Registrarse"; ObjectID = "WdZ-6N-mdj"; */
+"WdZ-6N-mdj.normalTitle" = "Register";
+
+/* Class = "UIButton"; normalTitle = "Conectarse"; ObjectID = "kL9-qF-J8G"; */
+"kL9-qF-J8G.normalTitle" = "Connect";
+
+/* Class = "UITextField"; placeholder = "telefono"; ObjectID = "oe6-LP-Vdy"; */
+"oe6-LP-Vdy.placeholder" = "Phone";
+

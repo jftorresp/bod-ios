@@ -1,0 +1,141 @@
+/* 
+  Localizable.strings
+  catpay-ios
+
+  Created by Mobile Dev 01 on 6/20/17.
+  Copyright © 2017 Technifiser. All rights reserved.
+*/
+
+notification.login = "Iniciar sesión";
+
+notification.user = "Introduce tu número telefónico";
+
+notification.forgotPassword = "Recuperar contraseña";
+
+notification.changePassword = "Cambiar contraseña";
+
+notification.change.incorrect.password = "Contraseña incorrecta.";
+
+notification.password.conditions = "Verifica las condiciones de creación de contraseña";
+
+notification.userInvalid = "Introduce un número telefónico válido (11 dígitos)";
+
+notification.conceptInvalid = "Introduce un concepto de pago";
+
+notification.error.password.validation = "La contraseña debe cumplir las siguientes condiciones:\n1. Longitud mínima 8 caracteres, máxima 10 caracteres.\n2. Debe tener al menos: un carácter especial, una letra en mayúscula, una letra en minúscula, un carácter numérico.\n3. Los caracteres especiales permitidos son los siguientes: ! @ # $ % & * ( ) _ - + = { } [ ] \ | : ; \" ' < > , . ? / \n4. No puede contener espacios en blanco.\n5. No puede contener caracteres numéricos iguales o consecutivos.";
+
+notification.passwordExpired = "Estimado cliente, tu contraseña de acceso a Pago Express BOD está vencida. Actualízala en la opción \"Desbloqueo de Usuario o Regeneración de Contraseña\"";
+
+notification.password = "Introduce tu contraseña";
+
+notification.passwordDoesntMatch =  "Las contraseñas no coinciden";
+
+notification.titleInvalid = "¡Atención!";
+
+notification.firstNameInvalid= "Introduce tu nombre";
+
+notification.firstNameInvalidCharacters = "Introduzca un nombre sin caracteres especiales";
+
+notification.lastNameInvalid= "Introduce tu apellido";
+
+notification.lastNameInvalidCharacters = "Introduzca un apellido sin caracteres especiales";
+
+notification.documentIdInvalid= "Introduce tu cédula de identidad";
+
+notification.documentIdInvalidDigit = "Introduce una cédula de identidad válida";
+
+notification.emailInvalid = "Introduce tu correo electrónico";
+
+notification.numberInvalid = "* Número telefónico: ";
+
+notification.documentInvalid  = "* Cédula de identidad: ";
+
+notification.invalidPassword = "La contraseña debe tener una longitud entre 8 y 10 caracteres";
+
+notification.newPassword = "La nueva contraseña no debe estar vacía";
+
+notification.bank = "Introduce un banco válido";
+
+notification.authenticating = "Autenticando...";
+
+notification.creatingAccount = "Creando registro...";
+
+notification.changing_password = "Actualizando...";
+
+notification.session_expired = "Sesión expirada";
+
+notification.session_expired_message = "Tu sesión expiró. Debes ingresar de nuevo.";
+
+notification.server_in_maintenance = "Verifica tu conexión e intenta nuevamente.";
+
+notification.server_inactive = "Servicio no disponible, por favor intente más tarde";
+
+notification.no_internet_connection = "No tienes conexión a internet";
+
+notification.logging_out = "Cerrando sesión...";
+
+notification.sentDetailsPaymet = "Detalle de Pago Enviado";
+
+notification.receivedDetailsPaymet = "Detalle de Pago Recibido";
+
+notification.invalidQR = "Código inválido ";
+
+notification.loading = "Cargando...";
+
+notification.accountDoesntExist = "Cuenta no existe";
+
+notification.mountEmpty = "Introduce un monto válido";
+
+notification.youSent = "Enviado";
+
+notification.sentYou = "Recibido"; 
+
+notification.approved = "Aprobado";
+
+notification.rejected = "Rechazado";
+
+notification.waiting = "Espere";
+
+notification.logging_out_accept = "Aceptar";
+
+notification.logging_out_close = "Cancelar";
+
+notification.logging_out_tittle = "¿Deseas cerrar sesión?" ;
+
+notification.logging_out_message = "¿Estas seguro(a)?" ;
+
+notification.verification_Indicator = "Verificando..." ;
+
+notification.InvalidCode_Verification = "Ingresaste un código inválido. Por favor, intenta de nuevo";
+
+notification.new_password_message = "Contraseña modificada con éxito";
+
+notification.transactionTrue = "APROBADO";
+
+notification.transactionTrueInHistory = "APROBADO";
+
+notification.transactionForbidden = "Estimado cliente, activa tu servicio Pago Express BOD a través de la Banca Digital BOD";
+
+notification.termsAndConditions = "Debes aceptar los términos y condiciones de uso para continuar";
+
+notification.titleTermsAndConditions = "Términos y condiciones de uso";
+
+notification.ForceUpdateTitle = "Nueva actualización";
+
+notification.forceUpdateMessage  = "Por favor actualice la aplicación";
+
+notification.forceUpdateButton = "Actualizar";
+
+notification.validateEmail = "Por favor verifique que el correo contenga datos válidos";
+
+notification.register = "Registro";
+
+notification.register_msg = "¡Felicidades! Tu registro se realizó exitosamente.";
+
+notification.multipleConnections = "Tienes múltiples conexiones. Por prevención, todas fueron cerradas";
+
+notification.inactiveUser = "Usuario inactivo.";
+
+notification.statusDesafiliadoNoRegistro = "Estimado cliente, para poder afiliarte a este servicio debes ingresar en la Banca Digital BOD: \n - Haz clic en la opción: 'Solicitudes', \n - Luego selecciona: 'Servicios BOD', \n - Marca la opción: 'Alifiación Pago Express'.";
+
+notificacion.statusActivoNoRegistrado = "Estimado cliente, para poder disfrutar de este servicio debe ingresar a la opción 'Registrarse' y seguir las instrucciones.";

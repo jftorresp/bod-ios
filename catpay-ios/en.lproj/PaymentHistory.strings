@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "+ 125.000.00 Bs"; ObjectID = "5uW-W2-jxL"; */
+"5uW-W2-jxL.text" = "+ 125.000.00 Bs";
+
+/* Class = "UILabel"; text = "Historico de pagos"; ObjectID = "9dB-MM-XC8"; */
+"9dB-MM-XC8.text" = "Payment History";
+
+/* Class = "UILabel"; text = "10:30AM"; ObjectID = "E0I-IP-wIo"; */
+"E0I-IP-wIo.text" = "10:30AM";
+
+/* Class = "UILabel"; text = "Frank Poole"; ObjectID = "Ovg-fk-jcT"; */
+"Ovg-fk-jcT.text" = "Frank Poole";
+
+/* Class = "UILabel"; text = "Te Envio"; ObjectID = "rWm-Vu-vQH"; */
+"rWm-Vu-vQH.text" = "Te Envio";
+
+/* Class = "UILabel"; text = "Estado"; ObjectID = "xHi-Xu-o4N"; */
+"xHi-Xu-o4N.text" = "Estado";

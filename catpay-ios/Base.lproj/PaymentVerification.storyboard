@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wdd-UR-ihU">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Payment Verification View Controller-->
+        <scene sceneID="szM-ck-ZaF">
+            <objects>
+                <viewController storyboardIdentifier="PaymentVerification" id="wdd-UR-ihU" customClass="PaymentVerificationViewController" customModule="Pago_Express_BOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="76O-VK-wZx"/>
+                        <viewControllerLayoutGuide type="bottom" id="KIY-2i-mHN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iI1-eO-1pg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6X-Bw-9n8" userLabel="RegisterAccount">
+                                <rect key="frame" x="-5" y="53.5" width="330" height="373"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gY-fD-I5P" userLabel="ViewHeader">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="64"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resumen de Pago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGG-vX-CpB">
+                                                <rect key="frame" x="103.5" y="23" width="123.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.71372549019999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="lF2-Ux-fU1"/>
+                                            <constraint firstItem="QGG-vX-CpB" firstAttribute="centerY" secondItem="0gY-fD-I5P" secondAttribute="centerY" id="wFt-Fc-xZV"/>
+                                            <constraint firstItem="QGG-vX-CpB" firstAttribute="centerX" secondItem="0gY-fD-I5P" secondAttribute="centerX" id="xwS-6B-bhF"/>
+                                        </constraints>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="98Z-jY-DEJ" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="84" width="285" height="36"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="xt0-hh-bBP"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mTB-gl-52r" userLabel="Banco" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="175" width="285" height="36"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="uCp-r4-SRT"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wWV-SD-iOF" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="130" width="285" height="36"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="7ta-st-vOL"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jqd-X0-F9C" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="221" width="286" height="36"/>
+                                        <color key="backgroundColor" red="0.96078431369999995" green="0.96470588239999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="1bt-bl-wUd"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="BHl-zM-1B3">
+                                        <rect key="frame" x="22" y="317" width="286" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fw-uI-3t9">
+                                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Cancelar" image="imgCancel">
+                                                    <color key="titleColor" red="0.82745098039999998" green="0.1647058824" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancelButton:" destination="wdd-UR-ihU" eventType="touchUpInside" id="U5Y-9W-o4c"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLu-cd-7gN">
+                                                <rect key="frame" x="104.5" y="0.0" width="181.5" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" title="Confirm Payment" image="btnLogin">
+                                                    <color key="titleColor" name="PrimaryColor"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="confirmButton:" destination="wdd-UR-ihU" eventType="touchUpInside" id="7re-dm-4Ll"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76v-FZ-9Qh">
+                                        <rect key="frame" x="22" y="266" width="286" height="36"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="89v-m4-MRb"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="BHl-zM-1B3" secondAttribute="trailing" constant="22" id="06F-zp-WNq"/>
+                                    <constraint firstItem="mTB-gl-52r" firstAttribute="leading" secondItem="I6X-Bw-9n8" secondAttribute="leading" constant="22" id="0Yw-5d-ThL"/>
+                                    <constraint firstAttribute="trailing" secondItem="0gY-fD-I5P" secondAttribute="trailing" id="5IR-52-kpo"/>
+                                    <constraint firstItem="76v-FZ-9Qh" firstAttribute="leading" secondItem="I6X-Bw-9n8" secondAttribute="leading" constant="22" id="6RT-i5-W35"/>
+                                    <constraint firstAttribute="trailing" secondItem="mTB-gl-52r" secondAttribute="trailing" constant="23" id="9Qs-Nb-YJa"/>
+                                    <constraint firstItem="76v-FZ-9Qh" firstAttribute="top" secondItem="jqd-X0-F9C" secondAttribute="bottom" constant="9" id="Den-ol-gby"/>
+                                    <constraint firstItem="jqd-X0-F9C" firstAttribute="top" secondItem="mTB-gl-52r" secondAttribute="bottom" constant="10" id="Gxh-BG-l6G"/>
+                                    <constraint firstItem="BHl-zM-1B3" firstAttribute="leading" secondItem="I6X-Bw-9n8" secondAttribute="leading" constant="22" id="IED-fP-Vuq"/>
+                                    <constraint firstItem="BHl-zM-1B3" firstAttribute="top" secondItem="76v-FZ-9Qh" secondAttribute="bottom" constant="15" id="Ib1-cm-LDE"/>
+                                    <constraint firstItem="wWV-SD-iOF" firstAttribute="leading" secondItem="I6X-Bw-9n8" secondAttribute="leading" constant="22" id="Iye-oC-cpb"/>
+                                    <constraint firstAttribute="trailing" secondItem="wWV-SD-iOF" secondAttribute="trailing" constant="23" id="Kqp-b1-i9l"/>
+                                    <constraint firstAttribute="trailing" secondItem="98Z-jY-DEJ" secondAttribute="trailing" constant="23" id="REF-ID-t4B"/>
+                                    <constraint firstAttribute="trailing" secondItem="jqd-X0-F9C" secondAttribute="trailing" constant="22" id="Wah-tj-zbc"/>
+                                    <constraint firstAttribute="trailing" secondItem="76v-FZ-9Qh" secondAttribute="trailing" constant="22" id="X1C-Tc-luf"/>
+                                    <constraint firstItem="wWV-SD-iOF" firstAttribute="top" secondItem="98Z-jY-DEJ" secondAttribute="bottom" constant="10" id="cvD-Ok-rm7"/>
+                                    <constraint firstItem="jqd-X0-F9C" firstAttribute="leading" secondItem="I6X-Bw-9n8" secondAttribute="leading" constant="22" id="fsN-kF-jOM"/>
+                                    <constraint firstItem="98Z-jY-DEJ" firstAttribute="top" secondItem="0gY-fD-I5P" secondAttribute="bottom" constant="20" id="gPg-46-oih"/>
+                                    <constraint firstAttribute="height" constant="373" id="his-L1-Ezd"/>
+                                    <constraint firstAttribute="width" constant="330" id="iuD-ct-t62"/>
+                                    <constraint firstItem="0gY-fD-I5P" firstAttribute="leading" secondItem="I6X-Bw-9n8" secondAttribute="leading" id="lMF-yy-Dze"/>
+                                    <constraint firstItem="0gY-fD-I5P" firstAttribute="top" secondItem="I6X-Bw-9n8" secondAttribute="top" id="ma0-KD-9NQ"/>
+                                    <constraint firstItem="mTB-gl-52r" firstAttribute="top" secondItem="wWV-SD-iOF" secondAttribute="bottom" constant="9" id="qQN-na-xud"/>
+                                    <constraint firstItem="98Z-jY-DEJ" firstAttribute="leading" secondItem="I6X-Bw-9n8" secondAttribute="leading" constant="22" id="qXP-8u-0sT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="I6X-Bw-9n8" firstAttribute="centerX" secondItem="iI1-eO-1pg" secondAttribute="centerX" id="NpT-jK-3X7"/>
+                            <constraint firstItem="I6X-Bw-9n8" firstAttribute="centerY" secondItem="iI1-eO-1pg" secondAttribute="centerY" id="YBW-dl-ikQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="banco" destination="mTB-gl-52r" id="5LE-iA-imi"/>
+                        <outlet property="cancelarBtn" destination="9Fw-uI-3t9" id="iQx-V1-1Zu"/>
+                        <outlet property="confirmarBtn" destination="mLu-cd-7gN" id="mdT-G7-uha"/>
+                        <outlet property="descripcion" destination="76v-FZ-9Qh" id="MPv-cT-vk4"/>
+                        <outlet property="monto" destination="jqd-X0-F9C" id="Ee2-UO-jT9"/>
+                        <outlet property="nombre" destination="98Z-jY-DEJ" id="W6X-Dg-9QU"/>
+                        <outlet property="telefono" destination="wWV-SD-iOF" id="QE4-nM-SX1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Sh-CC-Jtk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2692.5" y="-535"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btnLogin" width="24" height="24"/>
+        <image name="imgCancel" width="21.5" height="21"/>
+        <namedColor name="PrimaryColor">
+            <color red="0.40000000596046448" green="0.70999997854232788" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Ocurrio un Error"; ObjectID = "QGG-vX-CpB"; */
+"QGG-vX-CpB.text" = "ATTENTION";
+
+/* Class = "UIButton"; normalTitle = "Cerrar"; ObjectID = "kW5-jD-0q7"; */
+"kW5-jD-0q7.normalTitle" = "Dismiss";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lTu-xp-Qu6"; */
+"lTu-xp-Qu6.text" = "Label";

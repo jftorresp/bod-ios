@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Cuenta"; ObjectID = "S6C-Y7-8aW"; */
+"S6C-Y7-8aW.text" = "Cuenta";
+
+/* Class = "UILabel"; text = "Realizar Pago"; ObjectID = "iaQ-9J-d5E"; */
+"iaQ-9J-d5E.text" = "Realizar Pago";
+
+/* Class = "UILabel"; text = "Saldo Disponible"; ObjectID = "yIx-ui-hdz"; */
+"yIx-ui-hdz.text" = "Saldo Disponible";

@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Cancelar"; ObjectID = "UOy-El-NaS"; */
+"UOy-El-NaS.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Aceptar"; ObjectID = "mje-nm-Zwp"; */
+"mje-nm-Zwp.normalTitle" = "Accept";
+
+/* Class = "UILabel"; text = "acepto los términos y condiciones"; ObjectID = "vE3-3v-yP9"; */
+"vE3-3v-yP9.text" = "I accept the terms and conditions of use";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vba-wt-IGs"; */
+"vba-wt-IGs.normalTitle" = "";

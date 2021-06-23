@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "Directorio"; ObjectID = "85s-hP-jeI"; */
+"85s-hP-jeI.text" = "Directorio";
+
+/* Class = "UILabel"; text = "¿A quién deseas agregar?"; ObjectID = "wWW-xQ-SNn"; */
+"wWW-xQ-SNn.text" = "¿A quién deseas agregar?";
+
+/* Class = "UITextField"; placeholder = "Nombre"; ObjectID = "i43-0Q-pbw"; */
+"i43-0Q-pbw.placeholder" = "Nombre y Apellido";
+
+/* Class = "UITextField"; placeholder = "Cédula de identidad"; ObjectID = "wDY-c2-zQM"; */
+"wDY-c2-zQM.placeholder" = "Cédula de identidad";
+
+/* Class = "UITextField"; placeholder = "Teléfono"; ObjectID = "hOe-me-CbM"; */
+"hOe-me-CbM.placeholder" = "Teléfono";
+
+/* Class = "UIButton"; normalTitle = "Guardar"; ObjectID = "Dne-yh-8Nk"; */
+"Dne-yh-8Nk.normalTitle" = "Guardar";
+
+/* Class = "UIButton"; normalTitle = "Cancelar"; ObjectID = "B4F-oW-IQ9"; */
+"B4F-oW-IQ9.normalTitle" = "Cancelar";

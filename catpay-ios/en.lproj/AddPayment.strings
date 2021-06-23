@@ -1,0 +1,21 @@
+
+/* Class = "UITextField"; placeholder = "Banco"; ObjectID = "1sP-lU-dII"; */
+"1sP-lU-dII.placeholder" = "Bank account";
+
+/* Class = "UITextField"; placeholder = "Descripcion (Opcional)"; ObjectID = "7Pf-md-81q"; */
+"7Pf-md-81q.placeholder" = "Description (Optional)";
+
+/* Class = "UILabel"; text = "Escanear Codigo"; ObjectID = "KKQ-JW-6Kn"; */
+"KKQ-JW-6Kn.text" = "Scan QR Code";
+
+/* Class = "UITextField"; placeholder = "Bs. 0,00"; ObjectID = "gy2-SB-CMO"; */
+"gy2-SB-CMO.placeholder" = "Bs. 0,00";
+
+/* Class = "UILabel"; text = "Realizar Pago"; ObjectID = "on0-ff-xb8"; */
+"on0-ff-xb8.text" = "Make a Payment";
+
+/* Class = "UITextField"; placeholder = "Telefono (Beneficiario)"; ObjectID = "pPj-4I-Ay3"; */
+"pPj-4I-Ay3.placeholder" = "Phone (Acquiring)";
+
+/* Class = "UIButton"; normalTitle = "Realizar Pago"; ObjectID = "vGY-DO-rGw"; */
+"vGY-DO-rGw.normalTitle" = "Make Payment";

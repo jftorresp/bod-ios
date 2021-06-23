@@ -1,0 +1,24 @@
+
+/* Class = "UITextField"; placeholder = "Telefono"; ObjectID = "98Z-jY-DEJ"; */
+"98Z-jY-DEJ.placeholder" = "Phone (Acquiring)";
+
+/* Class = "UIButton"; normalTitle = "Cancelar"; ObjectID = "9Fw-uI-3t9"; */
+"9Fw-uI-3t9.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Numero de telefono no registrado.  Introduce los datos manualmente."; ObjectID = "QGG-vX-CpB"; */
+"QGG-vX-CpB.text" = "Phone number not registered in our server. Please introduce new data manually.";
+
+/* Class = "UITextField"; placeholder = "V"; ObjectID = "T6e-q3-eYf"; */
+"T6e-q3-eYf.placeholder" = "V";
+
+/* Class = "UIButton"; normalTitle = "Agregar"; ObjectID = "mLu-cd-7gN"; */
+"mLu-cd-7gN.normalTitle" = "Add";
+
+/* Class = "UITextField"; placeholder = "Cedula de Identidad"; ObjectID = "mMF-6k-fV5"; */
+"mMF-6k-fV5.placeholder" = "Identification";
+
+/* Class = "UITextField"; placeholder = "Nombre y Apellido"; ObjectID = "mTB-gl-52r"; */
+"mTB-gl-52r.placeholder" = "Full Name";
+
+/* Class = "UITextField"; placeholder = "Banco"; ObjectID = "wWV-SD-iOF"; */
+"wWV-SD-iOF.placeholder" = "Bank Account";

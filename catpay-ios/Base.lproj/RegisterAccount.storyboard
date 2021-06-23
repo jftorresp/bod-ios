@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wdd-UR-ihU">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Register Account View Controller-->
+        <scene sceneID="szM-ck-ZaF">
+            <objects>
+                <viewController storyboardIdentifier="RegisterAccount" id="wdd-UR-ihU" customClass="RegisterAccountViewController" customModule="Pago_Express_BOD" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="76O-VK-wZx"/>
+                        <viewControllerLayoutGuide type="bottom" id="KIY-2i-mHN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iI1-eO-1pg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6X-Bw-9n8" userLabel="RegisterAccount">
+                                <rect key="frame" x="-9" y="63.5" width="338" height="353"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0gY-fD-I5P" userLabel="ViewHeader">
+                                        <rect key="frame" x="0.0" y="0.0" width="338" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Numero de telefono no registrado.  Introduce los datos manualmente." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGG-vX-CpB" customClass="CustomLabel" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="3" width="303" height="45"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.71372549019999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telefono" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="98Z-jY-DEJ" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="75" width="286" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Banco" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wWV-SD-iOF" customClass="CustomSearchField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="123" width="286" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nombre y Apellido" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mTB-gl-52r" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="171" width="286" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T6e-q3-eYf" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="22" y="223" width="27" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Hc-gS-7Fe">
+                                        <rect key="frame" x="165" y="310" width="1" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
+                                        <color key="backgroundColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cedula de Identidad" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mMF-6k-fV5" customClass="CustomTextField" customModule="Pago_Express_BOD" customModuleProvider="target">
+                                        <rect key="frame" x="82" y="223" width="226" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="phonePad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fw-uI-3t9">
+                                        <rect key="frame" x="8" y="309" width="158" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                        <state key="normal" title="Cancelar">
+                                            <color key="titleColor" red="0.82745098039999998" green="0.1647058824" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closebutton:" destination="wdd-UR-ihU" eventType="touchUpInside" id="oIF-j0-NfT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLu-cd-7gN">
+                                        <rect key="frame" x="165" y="309" width="165" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                        <state key="normal" title="Agregar">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="agregar:" destination="wdd-UR-ihU" eventType="touchUpInside" id="Nge-C1-jMY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4P-Gq-30H">
+                                        <rect key="frame" x="51" y="229" width="29" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <state key="normal" image="icDropdownCyan"/>
+                                        <connections>
+                                            <action selector="pickerButton:" destination="wdd-UR-ihU" eventType="touchUpInside" id="RJu-jm-KES"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="353" id="2SR-mD-BMg"/>
+                                    <constraint firstAttribute="width" constant="338" id="SRv-rb-DnQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="I6X-Bw-9n8" firstAttribute="centerY" secondItem="iI1-eO-1pg" secondAttribute="centerY" id="UkG-vH-RWw"/>
+                            <constraint firstItem="I6X-Bw-9n8" firstAttribute="centerX" secondItem="iI1-eO-1pg" secondAttribute="centerX" id="eqn-34-KsL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="banco" destination="wWV-SD-iOF" id="vsF-W5-Bed"/>
+                        <outlet property="cedula" destination="mMF-6k-fV5" id="Ayk-Pe-aWe"/>
+                        <outlet property="modalView" destination="I6X-Bw-9n8" id="hJD-4P-FDi"/>
+                        <outlet property="nombre" destination="mTB-gl-52r" id="SAs-Ba-EPB"/>
+                        <outlet property="originYConstraint" destination="UkG-vH-RWw" id="71G-LV-pXI"/>
+                        <outlet property="telefono" destination="98Z-jY-DEJ" id="GPN-3C-6A4"/>
+                        <outlet property="textFieldPicker" destination="T6e-q3-eYf" id="pYM-dg-WsA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Sh-CC-Jtk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2659" y="-800"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icDropdownCyan" width="24" height="24"/>
+    </resources>
+</document>

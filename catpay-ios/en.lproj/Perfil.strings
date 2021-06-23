@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Telefono"; ObjectID = "3Nx-RI-3bO"; */
+"3Nx-RI-3bO.text" = "PHONE";
+
+/* Class = "UIButton"; normalTitle = "Cambiar Contrasena"; ObjectID = "7Ua-jD-LQ4"; */
+"7Ua-jD-LQ4.normalTitle" = "CHANGE PASSWORD";
+
+/* Class = "UILabel"; text = "Correo electronico"; ObjectID = "EZd-a7-rs9"; */
+"EZd-a7-rs9.text" = "EMAIL ADDRESS";
+
+/* Class = "UILabel"; text = "Perfil de Usuario"; ObjectID = "IFd-BW-mPv"; */
+"IFd-BW-mPv.text" = "Profile";
+
+/* Class = "UILabel"; text = "V 21192841"; ObjectID = "IKt-06-pcz"; */
+"IKt-06-pcz.text" = "V 21192841";
+
+/* Class = "UILabel"; text = "Nombre"; ObjectID = "NXJ-sy-6Ur"; */
+"NXJ-sy-6Ur.text" = "NAME";
+
+/* Class = "UILabel"; text = "Cedula de Identidad"; ObjectID = "azb-UI-i8w"; */
+"azb-UI-i8w.text" = "IDENTIFICATION";
+
+/* Class = "UILabel"; text = "juan.vasquez@technifiser.com"; ObjectID = "hYp-US-HPq"; */
+"hYp-US-HPq.text" = "juan.vasquez@technifiser.com";
+
+/* Class = "UILabel"; text = "04122276107"; ObjectID = "jQY-5f-Xcj"; */
+"jQY-5f-Xcj.text" = "04122276107";
+
+/* Class = "UILabel"; text = "Juan Vasquez"; ObjectID = "swN-8u-AU7"; */
+"swN-8u-AU7.text" = "Juan Vasquez";
