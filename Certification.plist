@@ -49,7 +49,7 @@
 		<key>CurrencySymbol</key>
 		<string>Bs.</string>
 		<key>DeepLinkingUrl</key>
-		<string>http://p2pappdesa.bod.com.ve</string>
+		<string>http://p2pappcal.bod.com.ve</string>
 		<key>DefaultAccountId</key>
 		<integer>23</integer>
 		<key>EnvironmentName</key>
@@ -63,7 +63,7 @@
 		<key>OtpLength</key>
 		<integer>8</integer>
 		<key>ServiceBaseUrl</key>
-		<string>http://p2pappdesa.bod.com.ve</string>
+		<string>http://p2pappcal.bod.com.ve</string>
 		<key>SmsSenderId</key>
 		<string>1263</string>
 	</dict>

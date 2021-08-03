@@ -42,7 +42,7 @@ class AESMethods{
             }
             
             let descryptText = try aes.decrypt(decodeBytes).toBase64()
-            let decodedData = Data(base64Encoded: descryptText!)
+            let decodedData = Data(base64Encoded: descryptText)
             let result = String(data: decodedData!, encoding: String.Encoding.utf8)
             
             return result

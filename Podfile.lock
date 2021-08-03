@@ -5,7 +5,7 @@ PODS:
     - ObjectMapper (~> 3.3)
   - Crashlytics (3.14.0):
     - Fabric (~> 1.10.2)
-  - CryptoSwift (1.4.0)
+  - CryptoSwift (1.4.1)
   - Fabric (1.10.2)
   - Firebase/Core (6.27.0):
     - Firebase/CoreOnly
@@ -110,7 +110,7 @@ PODS:
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 5.0)
   - Crashlytics
-  - CryptoSwift (= 1.4.0)
+  - CryptoSwift (= 1.4.1)
   - Fabric
   - Firebase/Core
   - Firebase/Messaging
@@ -154,7 +154,7 @@ SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
   Crashlytics: 9220f5bc89e7a618df411b4f639389dbfb0e03d2
-  CryptoSwift: 7cc902df1784de3b389a387756c7d710f197730c
+  CryptoSwift: 0bc800a7e6a24c4fc9ebeab97d44b0d5f73a78bd
   Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
   Firebase: fc4cbf6f1592636431821ef9a3c557e4dfd9f268
   FirebaseABTesting: b7f8b6c8c9398e98bb30c4195f697b5b73a330d0
@@ -178,6 +178,6 @@ SPEC CHECKSUMS:
   QRCodeReader.swift: b164a681887de276d405ff02bce854d82cd6360b
   TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
 
-PODFILE CHECKSUM: 2e90cf509a3f3c0a32e6b219ae1bf6100df7d955
+PODFILE CHECKSUM: 541f7735acd82a93a5f75f3146ad9cbfba7b3229
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.2

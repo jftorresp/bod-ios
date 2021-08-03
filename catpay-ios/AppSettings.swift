@@ -60,57 +60,46 @@ class AppSettings {
         
         // DISABLE SANDBOX //
 
-//        // detect environment Running //
-//        
-//        var nameEnvironment : String!
-//        
-//        switch Config.appConfiguration {
-//            
-//        case .TestFlight:
-//            
-//            nameEnvironment = "Certification"
-//            
-//            
-//        case .AppStore:
-//            
-//            nameEnvironment = "production"
-//            
-//            
-//        default:
-//            
-//            // LOCAL ENVIRONMENT //
-//
-//            if let appSettings = main.infoDictionary?["GlobalAppSettings"] as? Dictionary<String, Any>{
-//                cfg = appSettings
-//            }
-//            
-//            return cfg!
-//            
-//        }
-//        
-//        if let path = Bundle.main.path(forResource: nameEnvironment, ofType: "plist"){
-//        
-//            if let infoDictionary = NSDictionary(contentsOfFile: path){
-//                
-//                if let appSettings = infoDictionary["GlobalAppSettings"] as? Dictionary<String,Any>{
-//                
-//                    cfg = appSettings
-//                }
-//            
-//            }
-//        
-//        }
-//        
-//       return cfg!
+        // detect environment Running //
         
-        // ONLY LOCAL ENVIROMENT //
+        var nameEnvironment : String!
+        
+        switch Config.appConfiguration {
+            
+        case .TestFlight:
+            
+            nameEnvironment = "Certification"
+            
+        case .AppStore:
+            
+            nameEnvironment = "production"
+            
+        default:
+            
+            // LOCAL ENVIRONMENT //
 
-        if let appSettings = main.infoDictionary?["GlobalAppSettings"] as? Dictionary<String, Any>{
-            cfg = appSettings
+            if let appSettings = main.infoDictionary?["GlobalAppSettings"] as? Dictionary<String, Any>{
+                cfg = appSettings
+            }
+            
+            return cfg!
+            
         }
-
-        return cfg!
         
+        if let path = Bundle.main.path(forResource: nameEnvironment, ofType: "plist"){
+        
+            if let infoDictionary = NSDictionary(contentsOfFile: path){
+                
+                if let appSettings = infoDictionary["GlobalAppSettings"] as? Dictionary<String,Any>{
+                
+                    cfg = appSettings
+                }
+            
+            }
+        
+        }
+        
+       return cfg!
     }
     
     // get Endpoint
@@ -123,6 +112,5 @@ class AppSettings {
     }
     
     // convert string Json to dictionary
-
 }
 

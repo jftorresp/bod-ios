@@ -11,7 +11,7 @@ def bod_pods
     pod 'Crashlytics'
     pod 'NVActivityIndicatorView'
     pod 'QRCodeReader.swift', '~> 8.1.0'
-    pod 'CryptoSwift' ,'1.4.0'
+    pod 'CryptoSwift' ,'1.4.1'
     pod 'ObjectMapper', '3.3'
     pod 'Fabric'
     pod 'Crashlytics'

@@ -255,7 +255,7 @@ extension DetailContactViewController: UITableViewDelegate, UITableViewDataSourc
                     Task.updateDirectoryPhones(refreshed: false, directoryId: id, phoneNumbers: (DirectoryViewController.selectedContact?.phoneNumbers)!) { (response) in
                         
                         DispatchQueue.main.async {
-                            phoneTableview.reloadData()
+                            self.phoneTableview.reloadData()
                         }
                     }
                     
