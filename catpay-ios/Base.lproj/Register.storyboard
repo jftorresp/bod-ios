@@ -109,7 +109,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-eM-7lX" userLabel="ButtonCrearCuenta">
-                                                        <rect key="frame" x="160" y="446" width="135" height="30"/>
+                                                        <rect key="frame" x="162" y="446" width="133" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="pzw-Hq-BLC"/>
                                                         </constraints>
@@ -123,7 +123,7 @@
                                                         </connections>
                                                     </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btnLogin" translatesAutoresizingMaskIntoConstraints="NO" id="d0h-nB-zai">
-                                                        <rect key="frame" x="151" y="449" width="24" height="24"/>
+                                                        <rect key="frame" x="153" y="449" width="24" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="24" id="1CK-Hu-SIL"/>
                                                             <constraint firstAttribute="height" constant="24" id="8Ta-Wh-adb"/>
@@ -216,6 +216,8 @@
                         <outlet property="lastName" destination="A6R-k6-sUP" id="ZLy-vP-ypW"/>
                         <outlet property="password" destination="9bZ-nz-vGL" id="dby-h4-V8b"/>
                         <outlet property="phone" destination="suf-iE-rp5" id="FHH-Xp-ta3"/>
+                        <outlet property="registerButton" destination="2Nx-eM-7lX" id="NQL-J0-0f1"/>
+                        <outlet property="registerImage" destination="d0h-nB-zai" id="Ugn-Y7-ojM"/>
                         <outlet property="scrollView" destination="WhJ-ae-BKU" id="VMR-vU-2nI"/>
                         <outlet property="textFieldPicker" destination="Vuj-yO-njs" id="lNS-e6-bib"/>
                         <outlet property="validationLabel" destination="pbj-8t-MJ1" id="QAc-bv-aEq"/>

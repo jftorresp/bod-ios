@@ -20,7 +20,7 @@ class AddContactPaymentViewController: UIViewController {
     @IBOutlet weak var tipoCedulaBtn: UIButton!
     
     let picker = UIPickerView()
-    var pickerData = ["V","J","E","P","M"]
+    var pickerData = ["V","J","E","P","M","G"]
     var dataPicker: String = ""
     let regexValidationDocumentId = "^[0-9]*$"
     var dirModel: directoryModel?

@@ -21,7 +21,7 @@ notification.change.incorrect.password = "Contraseña incorrecta.";
 
 notification.password.conditions = "Verifica las condiciones de creación de contraseña";
 
-notification.error.password.validation = "La contraseña debe cumplir las siguientes condiciones:\n1. Longitud mínima 8 caracteres, máxima 10 caracteres.\n2. Debe tener al menos: un carácter especial, una letra en mayúscula, una letra en minúscula, un carácter numérico.\n3. Los caracteres especiales permitidos son los siguientes: ! @ # $ % & * ( ) _ - + = { } [ ] \ | : ; \" ' < > , . ? / \n4. No puede contener espacios en blanco.\n5. No puede contener caracteres numéricos iguales o consecutivos.";
+notification.error.password.validation = "La contraseña debe cumplir las siguientes condiciones:\n1. Longitud mínima 8 caracteres, máxima 10 caracteres.\n2. Debe tener al menos: un carácter especial, una letra en mayúscula, una letra en minúscula, un carácter numérico.\n3. Los caracteres especiales permitidos son los siguientes: ! @ # $ % & * ( ) _ - + = { } [ ] \ | : ; \" ' < > , . ? / \n4. No puede contener espacios en blanco.\n5. No puede contener caracteres numérico iguales o consecutivos.";
 
 notification.passwordDoesntMatch =  "Las contraseñas no coinciden";
 

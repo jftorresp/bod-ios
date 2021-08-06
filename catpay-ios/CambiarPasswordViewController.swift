@@ -24,6 +24,7 @@ class CambiarPasswordViewController: UIViewController {
         newPassword.delegate = self
         repeatPassword.delegate = self
         
+        self.validationLabel.textAlignment = .natural
         self.validationLabel.text = NSLocalizedString("notification.error.password.validation", comment: "")
         
         self.validationLabel.isHidden = true

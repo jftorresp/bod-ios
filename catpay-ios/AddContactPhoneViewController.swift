@@ -14,7 +14,6 @@ class AddContactPhoneViewController: UIViewController {
     @IBOutlet weak var telefonoTextField: UITextField!
     @IBOutlet weak var guardarBtn: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()

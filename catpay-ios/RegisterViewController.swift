@@ -23,10 +23,23 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var textFieldPicker: UITextField!
     @IBOutlet weak var validationLabel: UILabel!
+    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var registerImage: UIImageView!
+    
+    
+    var phoneFilled = false
+    var firstFilled = false
+    var lastFilled = false
+    var docFill = false
+    var passFill = false
+    var rPassFilled = false
+    var allFilled = false
+    
     
     let picker = UIPickerView()
-    var pickerData = ["V","E","P","M"]
-    let regexValidationName = "^[ÁáÉéÍíÓóÚúÑñA-Za-z]+([[:blank:]][ÁáÉéÍíÓóÚúÑñA-Za-z]+)*$"
+    var pickerData = ["V","J","E","P","M","G"]
+    let ACCEPTABLE_CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÁáÉéÍíÓóÚúÑñ"
+    let RISTRICTED_CHARACTERS = "“!@#$%&*()_-+={}[] \\|:;\"'<>,.?/؋฿₵₡¢₫֏€ƒ₣₲₴₾₭₺₼₦₱£元圆圓﷼៛₽₹රු૱௹꠸₨₪৳₸₮₩¥円~½0123456789"
     let regexValidationDocumentId = "^[0-9]*$"
     var debugEnvironment = true
     var dataPicker: String = ""
@@ -39,6 +52,10 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         password.delegate = self
         confirmPassword.delegate = self
+        phone.delegate = self
+        firstName.delegate = self
+        lastName.delegate = self
+
         
         // detect Environment for show email field //
         Answers.logCustomEvent(withName: "ScreenView", customAttributes: ["Screen":"Register" ])
@@ -72,7 +89,21 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     private func setupView(){
         
+        self.registerImage.image = UIImage(named: "btnLogin2")
+        self.registerButton.setTitleColor(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), for: .normal)
+        self.registerButton.isEnabled = false
+        
+        phone.addTarget(self, action: #selector(textFieldEmpty), for: UIControlEvents.editingChanged)
+        firstName.addTarget(self, action: #selector(textFieldEmpty), for: UIControlEvents.editingChanged)
+        lastName.addTarget(self, action: #selector(textFieldEmpty), for: UIControlEvents.editingChanged)
+        documentId.addTarget(self, action: #selector(textFieldEmpty), for: UIControlEvents.editingChanged)
+        password.addTarget(self, action: #selector(textFieldEmpty), for: UIControlEvents.editingChanged)
+        confirmPassword.addTarget(self, action: #selector(textFieldEmpty), for: UIControlEvents.editingChanged)
+        
+        phone.keyboardType = .numberPad
+        
         navigationItem.title = NSLocalizedString("notification.register", comment: "")
+        self.validationLabel.textAlignment = .natural
         self.validationLabel.text = NSLocalizedString("notification.error.password.validation", comment: "")
         
         self.validationLabel.isHidden = true
@@ -94,6 +125,73 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let backButton = UIBarButtonItem()
         backButton.title = ""
         self.navigationItem.backBarButtonItem = backButton
+    }
+    
+    @objc func textFieldEmpty(textField: UITextField) {
+        
+        if textField == phone {
+            if textField.text!.isEmpty {
+                phoneFilled = false
+            } else {
+                phoneFilled = true
+            }
+        }
+        
+        if textField == firstName {
+            if textField.text!.isEmpty {
+                firstFilled = false
+            } else {
+                firstFilled = true
+            }
+        }
+        
+        if textField == lastName {
+            if textField.text!.isEmpty {
+                lastFilled = false
+            } else {
+                lastFilled = true
+            }
+        }
+        
+        if textField == documentId {
+            if textField.text!.isEmpty {
+                docFill = false
+            } else {
+                docFill = true
+            }
+        }
+        
+        if textField == password {
+            if textField.text!.isEmpty {
+                passFill = false
+            } else {
+                passFill = true
+            }
+        }
+        
+        if textField == confirmPassword {
+            if textField.text!.isEmpty {
+                rPassFilled = false
+            } else {
+                rPassFilled = true
+            }
+        }
+        
+        allFilled = phoneFilled && firstFilled && lastFilled && docFill && passFill && rPassFilled
+        
+        if allFilled == true {
+            DispatchQueue.main.async {
+                self.registerImage.image = UIImage(named: "btnLogin")
+                self.registerButton.setTitleColor(UIColor(named: "PrimaryColor"), for: .normal)
+                self.registerButton.isEnabled = true
+            }
+        } else {
+            DispatchQueue.main.async {
+                self.registerImage.image = UIImage(named: "btnLogin2")
+                self.registerButton.setTitleColor(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1), for: .normal)
+                self.registerButton.isEnabled = false
+            }
+        }
     }
     
     // implement protcol scrollView 
@@ -355,19 +453,6 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             return
         }
         
-        // validation firstName Only Letters //
-        
-        
-        if  ((firstName.text?.range(of: regexValidationName, options: .regularExpression)) == nil) {
-            
-            let msg = NSLocalizedString("notification.firstNameInvalidCharacters", comment: "Introduce tu nombre")
-            let title = NSLocalizedString("notification.titleInvalid", comment: "Nombre invalido")
-            let alert = UtilityMethods.createAlert(title: title , message:[msg])
-            self.present(alert, animated:true,completion:nil)
-            return
-        }
-        
-        
         // validation lastName
         if((lastName.text?.count)!==0){
             
@@ -377,19 +462,7 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             self.present(alert, animated:true,completion:nil)
             return
         }
-        
-        // validation lastName Only letters //
-        
-        if ((lastName.text?.range(of: regexValidationName, options: .regularExpression)) == nil){
-            
-            let msg = NSLocalizedString("notification.lastNameInvalidCharacters", comment: "Introduce tu apellido")
-            let title = NSLocalizedString("notification.titleInvalid", comment: "Apellido invalido")
-            let alert = UtilityMethods.createAlert(title: title , message:[msg])
-            self.present(alert, animated:true,completion:nil)
-            return
-        }
-        
-        
+                
         // validation documentId
         if((documentId.text?.count)! == 0){
             
@@ -460,11 +533,9 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let data = RegisterModel(phoneNumber:phone.text!, firstNames:firstName.text!,lastNames:lastName.text!, email:emailText!, password:password.text!,documentId:documentId.text!, docType:docType.text!)
         
         self.registerModel = data
-        // open terms And Conditions modal //
-        let modalVC = TermsAndConditionsViewController.createController()
-        modalVC.delegate = self
-        self.present(modalVC, animated: true)
-
+        let atmVC = ATMCodeViewController.createController()
+        atmVC.delegate = self
+        self.navigationController?.pushViewController(atmVC, animated: true)
     }
     
     func errorNotification(in viewController: UIViewController, errors:String){
@@ -473,15 +544,15 @@ class RegisterViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
 }
 
-extension RegisterViewController: TermsAndConditionsViewDelegate {
-    
-    func termsAndConditions(isAccepted: Bool) {
-        guard isAccepted else { return }
-        let atmVC = ATMCodeViewController.createController()
-        atmVC.delegate = self
-        self.navigationController?.pushViewController(atmVC, animated: true)
-    }
-}
+//extension RegisterViewController: TermsAndConditionsViewDelegate {
+//
+//    func termsAndConditions(isAccepted: Bool) {
+//        guard isAccepted else { return }
+//        let atmVC = ATMCodeViewController.createController()
+//        atmVC.delegate = self
+//        self.navigationController?.pushViewController(atmVC, animated: true)
+//    }
+//}
 
 extension RegisterViewController: ATMCodeViewDelegate{
     
@@ -525,10 +596,26 @@ extension RegisterViewController: UITextFieldDelegate {
         if (string == " ") {
             return false
         }
-        let maxLength = 10
+        
+        var maxLength = 0
+        if textField == password || textField == confirmPassword {
+            maxLength = 10
+        }
+        
+        if textField == phone {
+            maxLength = 11
+        }
+        
+        if textField == firstName || textField == lastName {
+            let cs = NSCharacterSet(charactersIn: ACCEPTABLE_CHARACTERS).inverted
+            let filtered = string.components(separatedBy: cs).joined(separator: "")
+            return (string == filtered)
+        }
+        
         let currentString: NSString = (textField.text ?? "") as NSString
         let newString: NSString =
             currentString.replacingCharacters(in: range, with: string) as NSString
+        
         return newString.length <= maxLength
     }
     

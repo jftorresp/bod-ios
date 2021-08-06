@@ -21,7 +21,7 @@ class AddContactViewController: UIViewController {
     @IBOutlet weak var cancelarBtn: UIButton!
     
     let picker = UIPickerView()
-    var pickerData = ["V","E","P","M"]
+    var pickerData = ["V","J","E","P","M","G"]
     var dataPicker: String = ""
     var dirModel: directoryModel?
     let regexValidationDocumentId = "^[0-9]*$"

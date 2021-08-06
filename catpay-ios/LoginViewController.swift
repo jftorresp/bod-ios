@@ -46,7 +46,6 @@ class LoginViewController: UIViewController {
     
     private func setupView(){
       
-        navigationItem.title = NSLocalizedString("notification.login", comment: "")
         let backButtonItem = UIBarButtonItem()
         backButtonItem.title = ""
         self.navigationItem.backBarButtonItem = backButtonItem

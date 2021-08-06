@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -96,9 +96,8 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DAS-4a-avZ">
-                                                        <rect key="frame" x="25" y="304" width="176" height="27"/>
+                                                        <rect key="frame" x="15" y="304" width="313" height="27"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="176" id="FxA-sW-HpA"/>
                                                             <constraint firstAttribute="height" constant="27" id="iPF-Aj-XJn"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
@@ -120,7 +119,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="DAS-4a-avZ" firstAttribute="leading" secondItem="ULe-SE-v8x" secondAttribute="leading" constant="25" id="2Fe-W6-nJs"/>
+                                                    <constraint firstItem="DAS-4a-avZ" firstAttribute="leading" secondItem="ULe-SE-v8x" secondAttribute="leading" constant="15" id="2Fe-W6-nJs"/>
                                                     <constraint firstAttribute="trailing" secondItem="oe6-LP-Vdy" secondAttribute="trailing" constant="25" id="37L-Jw-wWm"/>
                                                     <constraint firstItem="cmG-de-beJ" firstAttribute="centerX" secondItem="ULe-SE-v8x" secondAttribute="centerX" id="4aK-Vl-1IR"/>
                                                     <constraint firstAttribute="trailing" secondItem="Kwk-oc-ALP" secondAttribute="trailing" constant="119" id="6BE-lk-Ehz"/>

@@ -18,7 +18,7 @@ class EditContactInfoViewController: UIViewController {
     @IBOutlet weak var guardarBtn: UIButton!
     
     let picker = UIPickerView()
-    var pickerData = ["V","E","P","M"]
+    var pickerData = ["V","J","E","P","M","G"]
     var dataPicker: String = ""
     let regexValidationDocumentId = "^[0-9]*$"
     
